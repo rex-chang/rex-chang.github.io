@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>东山小谢 on 但一回醉</title>
+    <link>https://rex-chang.github.io/tags/%E4%B8%9C%E5%B1%B1%E5%B0%8F%E8%B0%A2/</link>
+    <description>Recent content in 东山小谢 on 但一回醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 21 Apr 2018 01:08:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://rex-chang.github.io/tags/%E4%B8%9C%E5%B1%B1%E5%B0%8F%E8%B0%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>加班到深夜</title>
+      <link>https://rex-chang.github.io/post/article/first_night/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/article/first_night/</guid>
+      <description>&lt;p&gt;闺女到这个点竟然还没有醒.&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用Hugo搭了个Blog</title>
+      <link>https://rex-chang.github.io/post/article/first/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/article/first/</guid>
+      <description>用Hugo搭了个静态博客.</description>
+    </item>
+    
+  </channel>
+</rss>

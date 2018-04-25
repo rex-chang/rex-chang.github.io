@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on 但一回醉</title>
+    <link>https://rex-chang.github.io/tags/php/</link>
+    <description>Recent content in Php on 但一回醉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Apr 2018 13:59:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://rex-chang.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Laravel集成腾讯云短信</title>
+      <link>https://rex-chang.github.io/post/code/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
+      <pubDate>Wed, 25 Apr 2018 13:59:05 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/code/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
+      <description>&lt;p&gt;开了几次会, 产品终于定下来接入腾讯云短信平台&lt;/p&gt;
+
+&lt;p&gt;本来想装装逼, 结果 composer一下子就装好了..&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>写Lavavel遇到的一些坑</title>
+      <link>https://rex-chang.github.io/post/code/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/code/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <description>&lt;p&gt;最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
