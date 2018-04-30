@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.39" />
 
-  <title>开启BBR加速 &middot; 一回醉</title>
+  <title>Laravel解析env配置 &middot; 一回醉</title>
 
   
   
@@ -208,7 +208,7 @@
 
 
 <div class="header">
-  <h1>开启BBR加速</h1>
+  <h1>Laravel解析env配置</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -217,7 +217,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>23 Apr 2018, 14:27</time>
+    <time>27 Apr 2018, 16:17</time>
   </div>
 
   
@@ -230,11 +230,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/linux">Linux</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/php">php</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/bbr">bbr</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/ss">ss</a>
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/laravel">laravel</a>
     
   </div>
   
@@ -242,60 +240,30 @@
 
 </div>
 
-  <p>开启Linux BBR加速<br />
+  <p>业务需求需要写一些脚本来导入数据, 但是在<code>wsl</code>下面, <code>php artisan make:command xxx</code> 实在是卡, 于是选择了直接写. 需要解析 <code>.env</code> 来读取配置, 于是简单了解了下 Laravel 解析配置的方法<br />
 </p>
 
 <blockquote>
-<p>转载自: <a href="https://teddysun.com/489.html">https://teddysun.com/489.html</a></p>
+<p>引用库: <a href="https://github.com/vlucas/phpdotenv">https://github.com/vlucas/phpdotenv</a></p>
 </blockquote>
 
-<p>使用<code>root</code>账号登录</p>
+<p>Laravel 采用了 <code>phpdotenv</code> 这个库来解析 <code>.env</code> 文件, 用法如下:</p>
 
-<pre><code class="language-bash">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
+<pre><code class="language-php">    $dotenv = new Dotenv\Dotenv(__DIR__, 'myconfig');
+    $dotenv-&gt;load();
 </code></pre>
-
-<p>安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。<br />
-重启完成后，进入 VPS，验证一下是否成功安装最新内核并开启 TCP BBR，输入以下命令：</p>
-
-<pre><code class="language-sh">uname -r
-</code></pre>
-
-<p>查看内核版本，显示为最新版就表示 OK 了</p>
-
-<pre><code class="language-bash">sysctl net.ipv4.tcp_available_congestion_control
-</code></pre>
-
-<p>返回值一般为：<br />
-net.ipv4.tcp_available_congestion_control = bbr cubic reno</p>
-
-<pre><code class="language-bash">sysctl net.ipv4.tcp_congestion_control
-</code></pre>
-
-<p>返回值一般为：<br />
-net.ipv4.tcp_congestion_control = bbr</p>
-
-<pre><code class="language-bash">sysctl net.core.default_qdisc
-</code></pre>
-
-<p>返回值一般为：<br />
-net.core.default_qdisc = fq</p>
-
-<pre><code class="language-bash">lsmod | grep bbr
-</code></pre>
-
-<p>返回值有 tcp_bbr 模块即说明 bbr 已启动。注意：并不是所有的 VPS 都会有此返回值，若没有也属正常。</p>
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://rex-chang.github.io/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">写Lavavel遇到的一些坑</a>
+      <a href="https://rex-chang.github.io/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/">屏蔽安卓退出全屏的提示</a>
     </nav>
     
   </div>
@@ -304,14 +272,8 @@ net.core.default_qdisc = fq</p>
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/">Laravel集成腾讯云短信</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

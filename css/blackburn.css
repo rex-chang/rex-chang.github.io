@@ -18,9 +18,20 @@ blockquote {
   font-family: Open Sans;
   font-style: italic;
   word-wrap: break-word;
+  border-radius: 0.2em;  
 }
 
-
+code {
+  background-color: #282b2e;
+  color: #a9b7c6;
+  display: inline;
+  padding:0.05em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.2em;
+  /* border:2px solid; */
+  /* border-radius:25px; */
+}
 
 a {
   color: #3b8bba;

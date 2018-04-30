@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.39" />
 
-  <title>开启BBR加速 &middot; 一回醉</title>
+  <title>写Lavavel遇到的一些坑 &middot; 一回醉</title>
 
   
   
@@ -208,7 +208,7 @@
 
 
 <div class="header">
-  <h1>开启BBR加速</h1>
+  <h1>写Lavavel遇到的一些坑</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -217,7 +217,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>23 Apr 2018, 14:27</time>
+    <time>21 Apr 2018, 01:08</time>
   </div>
 
   
@@ -230,11 +230,11 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/linux">Linux</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/coding">coding</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/bbr">bbr</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/php">php</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/ss">ss</a>
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/laravel">laravel</a>
     
   </div>
   
@@ -242,60 +242,99 @@
 
 </div>
 
-  <p>开启Linux BBR加速<br />
+  <p>最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.<br />
 </p>
 
+<h3 id="providers-服务提供者-篇">Providers(服务提供者)篇</h3>
+
 <blockquote>
-<p>转载自: <a href="https://teddysun.com/489.html">https://teddysun.com/489.html</a></p>
+<p>文档地址: <a href="https://laravel-china.org/docs/laravel/5.6/providers">https://laravel-china.org/docs/laravel/5.6/providers</a></p>
 </blockquote>
 
-<p>使用<code>root</code>账号登录</p>
+<p>Provider的类名中,<strong><span color="red">不能包含数字</span></strong>, 否则无法正常引导</p>
 
-<pre><code class="language-bash">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
+<h3 id="参数传递">参数传递</h3>
+
+<blockquote>
+<p>参考引用: <a href="https://segmentfault.com/a/1190000007227276">https://segmentfault.com/a/1190000007227276</a></p>
+</blockquote>
+
+<p>有时需要在中间中把参数传递到控制器中，则可以通过Request对象作为传输管道，代码如下：</p>
+
+<pre><code class="language-php">namespace App\Http\Middleware;
+
+use Closure;
+
+class ControllerParameter
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle($request, Closure $next, $role)
+    {
+        $request-&gt;attributes-&gt;add(compact('role')); // 'client'
+        return $next($request);
+    }
+}
 </code></pre>
 
-<p>安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。<br />
-重启完成后，进入 VPS，验证一下是否成功安装最新内核并开启 TCP BBR，输入以下命令：</p>
+<p>控制器中使用Request对象获取$role参数：</p>
 
-<pre><code class="language-sh">uname -r
+<pre><code class="language-php">namespace App\Http\Controllers\RouteParameter;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class MiddlewareToController extends Controller
+{
+    public function index(Request $request)
+    {
+        dd($request-&gt;get('role'));
+    }
+}
 </code></pre>
 
-<p>查看内核版本，显示为最新版就表示 OK 了</p>
+<h3 id="存储篇">存储篇</h3>
 
-<pre><code class="language-bash">sysctl net.ipv4.tcp_available_congestion_control
+<blockquote>
+<p>redis文档:  <a href="https://laravel-china.org/docs/laravel/5.6/redis">https://laravel-china.org/docs/laravel/5.6/redis</a></p>
+</blockquote>
+
+<p>使用<code>facade</code>中redis中的返回值并不一定与<code>phpredis</code>扩展所返回一致.<br />
+查看了下</p>
+
+<blockquote>
+<p>\laravel\framework\src\Illuminate\Redis\Connections<br />
+\PhpRedisConnection.php</p>
+</blockquote>
+
+<p>代码中,  将返回值类型改掉了</p>
+
+<pre><code class="language-php">public function hmget($key, ...$dictionary)
+    {
+        if (count($dictionary) == 1) {
+            $dictionary = $dictionary[0];
+        }
+
+        return array_values($this-&gt;command('hmget', [$key, $dictionary]));
+    }
 </code></pre>
-
-<p>返回值一般为：<br />
-net.ipv4.tcp_available_congestion_control = bbr cubic reno</p>
-
-<pre><code class="language-bash">sysctl net.ipv4.tcp_congestion_control
-</code></pre>
-
-<p>返回值一般为：<br />
-net.ipv4.tcp_congestion_control = bbr</p>
-
-<pre><code class="language-bash">sysctl net.core.default_qdisc
-</code></pre>
-
-<p>返回值一般为：<br />
-net.core.default_qdisc = fq</p>
-
-<pre><code class="language-bash">lsmod | grep bbr
-</code></pre>
-
-<p>返回值有 tcp_bbr 模块即说明 bbr 已启动。注意：并不是所有的 VPS 都会有此返回值，若没有也属正常。</p>
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://rex-chang.github.io/post/article/first_night/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">写Lavavel遇到的一些坑</a>
+      <a href="https://rex-chang.github.io/post/article/first_night/">加班到深夜</a>
     </nav>
     
   </div>
@@ -305,13 +344,13 @@ net.core.default_qdisc = fq</p>
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/">Laravel集成腾讯云短信</a>
+      <a href="https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">开启BBR加速</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rex-chang.github.io/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rex-chang.github.io/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</loc>
     <lastmod>2018-04-25T18:21:48+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rex-chang.github.io/post/code/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</loc>
+    <loc>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</loc>
     <lastmod>2018-04-25T13:59:05+08:00</lastmod>
   </url>
   
@@ -18,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://rex-chang.github.io/post/code/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
+    <loc>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
     <lastmod>2018-04-21T01:08:15+08:00</lastmod>
   </url>
   
@@ -49,20 +54,20 @@
   </url>
   
   <url>
-    <loc>https://rex-chang.github.io/categories/coding/</loc>
-    <lastmod>2018-04-25T18:21:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://rex-chang.github.io/tags/coding/</loc>
     <lastmod>2018-04-25T13:59:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://rex-chang.github.io/categories/coding/</loc>
+    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rex-chang.github.io/tags/laravel/</loc>
-    <lastmod>2018-04-25T13:59:05+08:00</lastmod>
+    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,13 +79,13 @@
   
   <url>
     <loc>https://rex-chang.github.io/tags/php/</loc>
-    <lastmod>2018-04-25T13:59:05+08:00</lastmod>
+    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rex-chang.github.io/post/</loc>
-    <lastmod>2018-04-25T18:21:48+08:00</lastmod>
+    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -103,7 +108,7 @@
   
   <url>
     <loc>https://rex-chang.github.io/</loc>
-    <lastmod>2018-04-25T18:21:48+08:00</lastmod>
+    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
