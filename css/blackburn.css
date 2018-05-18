@@ -32,6 +32,16 @@ code {
   /* border:2px solid; */
   /* border-radius:25px; */
 }
+table,tr,td, th{
+  border:0.1rem;
+  border-color:black;
+  border-collapse: collapse;
+  background-color: #F6F6F6;
+  border-style: solid;
+  /* padding-block-start: 1rem; */
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
 
 a {
   color: #3b8bba;

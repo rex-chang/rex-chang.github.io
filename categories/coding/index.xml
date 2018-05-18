@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 27 Apr 2018 16:17:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 May 2018 12:44:04 +0800</lastBuildDate>
     
 	<atom:link href="https://rex-chang.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OSI七层网络模型与TCPIP四层网络模型</title>
+      <link>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
+      <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Laravel解析env配置</title>

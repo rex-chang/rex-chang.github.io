@@ -221,6 +221,120 @@
   
     <article>
   <header>
+    <h2><a href="https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/">通过ssh反向代理&#43;跳板机访问内网机器</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>17 May 2018, 11:12</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/net">net</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/linux">linux</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>闲来无事在家里整了台Linux服务器, 想在外网访问时发现电信光猫无法做端口映射, 于是用手头闲置的云服做了个跳板机.</p>
+
+<blockquote>
+<p>本文参考了 <a href="https://www.cnblogs.com/kwongtai/p/6903420.html">https://www.cnblogs.com/kwongtai/p/6903420.html</a></p>
+</blockquote>
+
+<p>使用到的ssh参数:<br />
+反向代理:<br />
+<code>ssh -fcNR</code><br />
+正向代理:<br />
+<code>ssh -fcNL</code><br />
+参数说明:</p>
+
+<pre><code class="language-bash">
+-f 后台执行ssh指令
+-C 允许压缩数据
+-N 不执行远程指令
+-R 将远程主机(服务器)的某个端口转发到本地端指定机器的指定端口
+-L 将本地机(客户机)的某个端口转发到远端指定机器的指定端口
+-p 指定远程主机的端口
+
+******************区分大小写啊各位亲******************
+</code></pre>
+
+<p></p>
+  </p>
+
+  
+  <footer>
+    <a href="https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/">OSI七层网络模型与TCPIP四层网络模型</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>11 May 2018, 12:44</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/coding">coding</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/net">net</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/linux">linux</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>整理自<em>印象笔记</em>, OSI七层网络模型与TCPIP四层网络模型</p>
+
+<p></p>
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">开启BBR加速</a></h2>
 
     <div class="post-meta">

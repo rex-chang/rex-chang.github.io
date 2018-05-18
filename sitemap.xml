@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</loc>
+    <lastmod>2018-05-17T11:12:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</loc>
+    <lastmod>2018-05-12T21:04:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2018-05-11T12:44:04+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rex-chang.github.io/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2018-04-27T16:17:19+08:00</lastmod>
   </url>
@@ -54,14 +69,20 @@
   </url>
   
   <url>
-    <loc>https://rex-chang.github.io/categories/coding/</loc>
-    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
+    <loc>https://rex-chang.github.io/tags/coding/</loc>
+    <lastmod>2018-05-11T12:44:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rex-chang.github.io/tags/coding/</loc>
-    <lastmod>2018-04-25T13:59:05+08:00</lastmod>
+    <loc>https://rex-chang.github.io/categories/coding/</loc>
+    <lastmod>2018-05-11T12:44:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rex-chang.github.io/tags/english/</loc>
+    <lastmod>2018-05-12T21:04:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -73,7 +94,13 @@
   
   <url>
     <loc>https://rex-chang.github.io/tags/linux/</loc>
-    <lastmod>2018-04-23T14:27:13+08:00</lastmod>
+    <lastmod>2018-05-17T11:12:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rex-chang.github.io/tags/net/</loc>
+    <lastmod>2018-05-17T11:12:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,13 +112,25 @@
   
   <url>
     <loc>https://rex-chang.github.io/post/</loc>
-    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
+    <lastmod>2018-05-17T11:12:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rex-chang.github.io/tags/ss/</loc>
     <lastmod>2018-04-23T14:27:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rex-chang.github.io/tags/study/</loc>
+    <lastmod>2018-05-12T21:04:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rex-chang.github.io/categories/study/</loc>
+    <lastmod>2018-05-12T21:04:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,7 +147,7 @@
   
   <url>
     <loc>https://rex-chang.github.io/</loc>
-    <lastmod>2018-04-27T16:17:19+08:00</lastmod>
+    <lastmod>2018-05-17T11:12:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   

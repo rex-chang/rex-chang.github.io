@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.39" />
 
-  <title>Coding &middot; 一回醉</title>
+  <title>通过ssh反向代理&#43;跳板机访问内网机器 &middot; 一回醉</title>
 
   
   
@@ -39,8 +39,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="一回醉" href="https://rex-chang.github.io/tags/coding/index.xml" />
   
 
   
@@ -111,10 +109,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://rex-chang.github.io/tags/coding/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -214,20 +208,16 @@
 
 
 <div class="header">
-  <h1>Coding</h1>
+  <h1>通过ssh反向代理&#43;跳板机访问内网机器</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/">OSI七层网络模型与TCPIP四层网络模型</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>11 May 2018, 12:44</time>
+    <time>17 May 2018, 11:12</time>
   </div>
 
   
@@ -239,8 +229,6 @@
   
   <div>
     <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/coding">coding</a>&nbsp;&#47;
     
       <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/net">net</a>&nbsp;&#47;
     
@@ -252,117 +240,145 @@
 
 </div>
 
-  </header>
+  <p>闲来无事在家里整了台Linux服务器, 想在外网访问时发现电信光猫无法做端口映射, 于是用手头闲置的云服做了个跳板机.</p>
 
-  <p>
-  <p>整理自<em>印象笔记</em>, OSI七层网络模型与TCPIP四层网络模型</p>
+<blockquote>
+<p>本文参考了 <a href="https://www.cnblogs.com/kwongtai/p/6903420.html">https://www.cnblogs.com/kwongtai/p/6903420.html</a></p>
+</blockquote>
 
-<p></p>
-  </p>
+<p>使用到的ssh参数:<br />
+反向代理:<br />
+<code>ssh -fcNR</code><br />
+正向代理:<br />
+<code>ssh -fcNL</code><br />
+参数说明:</p>
 
-  
-</article>
+<pre><code class="language-bash">
+-f 后台执行ssh指令
+-C 允许压缩数据
+-N 不执行远程指令
+-R 将远程主机(服务器)的某个端口转发到本地端指定机器的指定端口
+-L 将本地机(客户机)的某个端口转发到远端指定机器的指定端口
+-p 指定远程主机的端口
 
-  
-    <article>
-  <header>
-    <h2><a href="https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/">Laravel集成腾讯云短信</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>25 Apr 2018, 13:59</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/coding">coding</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/php">php</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/laravel">laravel</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>开了几次会, 产品终于定下来接入腾讯云短信平台</p>
-
-<p>本来想装装逼, 结果 composer一下子就装好了..</p>
+******************区分大小写啊各位亲******************
+</code></pre>
 
 <p></p>
-  </p>
+
+<h3 id="1-机器情况">1. 机器情况</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">机器</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">机器A</td>
+<td align="left">处于内网</td>
+</tr>
+
+<tr>
+<td align="left">机器B</td>
+<td align="left">处于外网, 作为跳板机</td>
+</tr>
+
+<tr>
+<td align="left">机器C</td>
+<td align="left">处于公司内网, 想要访问A</td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="2-配置免密登录">2. 配置免密登录:</h3>
+
+<h4 id="2-1-机器a上生成密钥">2.1 机器A上生成密钥</h4>
+
+<pre><code class="language-bash">ssh-keygen -t rsa
+</code></pre>
+
+<h4 id="2-2-将公钥拷贝到机器b上">2.2 将公钥拷贝到机器B上</h4>
+
+<pre><code class="language-bash">ssh-copy-id -p[机器B的Port] [机器B用户名]@[机器B的IP]
+</code></pre>
+
+<h3 id="3-每台机器需要安装-ssh-客户端-跳板机安装-openssh-server">3. 每台机器需要安装<code>ssh</code>客户端, 跳板机安装<code>openssh-server</code></h3>
+
+<h4 id="3-1-在-a机器-上执行">3.1 在[A机器]上执行</h4>
+
+<pre><code class="language-bash">ssh -fCNR [机器A的IP或省略]:[A机器端口]:[B机器的IP]:[B机器端口] [登陆B机器的用户名@B机器的IP] -p [B机Port]
+</code></pre>
+
+<p>如使用B机器的7280端口，以及A机器的22端口，按照上面的指令就是这样子的操作<br />
+<code>ssh -fCNR 7280:localhost:22 root@123.123.123.123</code></p>
+
+<p>由于ssh会因断网/超时等原因断开,因此更好的做法是使用<code>autossh</code></p>
+
+<pre><code class="language-bash">sudo apt install autossh
+autossh -M 7281 -fCNR 7280:localhost:22 root@123.123.123.123
+</code></pre>
+
+<h4 id="3-2-建立b机器的正向代理-用来做转发-具体指令">3.2 建立B机器的正向代理，用来做转发，具体指令</h4>
+
+<pre><code class="language-bash">ssh -fCNL [A机器IP或省略]:[A机器端口]:[B机器的IP]:[B机器端口] [登陆B机器的用户名@B机器的IP]
+</code></pre>
 
   
-  <footer>
-    <a href="https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">写Lavavel遇到的一些坑</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <div class="pure-u-10-24">
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/coding">coding</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/php">php</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/laravel">laravel</a>
+    <nav class="prev">
+      <a href="https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/">英语学习笔记001</a>
+    </nav>
     
   </div>
-  
-  
-
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  <p>最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.<br />
-</p>
-  </p>
 
   
-  <footer>
-    <a href="https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
@@ -387,3 +403,4 @@
 
 </body>
 </html>
+

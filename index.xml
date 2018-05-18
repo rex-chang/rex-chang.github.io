@@ -7,10 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 27 Apr 2018 16:17:19 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 May 2018 11:12:12 +0800</lastBuildDate>
     
 	<atom:link href="https://rex-chang.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>通过ssh反向代理&#43;跳板机访问内网机器</title>
+      <link>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</link>
+      <pubDate>Thu, 17 May 2018 11:12:12 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</guid>
+      <description>&lt;p&gt;闲来无事在家里整了台Linux服务器, 想在外网访问时发现电信光猫无法做端口映射, 于是用手头闲置的云服做了个跳板机.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文参考了 &lt;a href=&#34;https://www.cnblogs.com/kwongtai/p/6903420.html&#34;&gt;https://www.cnblogs.com/kwongtai/p/6903420.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;使用到的ssh参数:&lt;br /&gt;
+反向代理:&lt;br /&gt;
+&lt;code&gt;ssh -fcNR&lt;/code&gt;&lt;br /&gt;
+正向代理:&lt;br /&gt;
+&lt;code&gt;ssh -fcNL&lt;/code&gt;&lt;br /&gt;
+参数说明:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;
+-f 后台执行ssh指令
+-C 允许压缩数据
+-N 不执行远程指令
+-R 将远程主机(服务器)的某个端口转发到本地端指定机器的指定端口
+-L 将本地机(客户机)的某个端口转发到远端指定机器的指定端口
+-p 指定远程主机的端口
+
+******************区分大小写啊各位亲******************
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>英语学习笔记001</title>
+      <link>https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</link>
+      <pubDate>Sat, 12 May 2018 21:04:29 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</guid>
+      <description>&lt;p&gt;主要记录一些词汇, 日常用的, 学习中遇到的&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OSI七层网络模型与TCPIP四层网络模型</title>
+      <link>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
+      
+      <guid>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
+      <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Laravel解析env配置</title>
@@ -90,8 +145,8 @@
       <pubDate>Thu, 19 Apr 2018 15:31:03 +0800</pubDate>
       
       <guid>https://rex-chang.github.io/about/</guid>
-      <description>夫天地者，万物之逆旅也；光阴者，百代之过客也。而浮生若梦，为欢几何？
-——李白  偶尔在此码些字, 记录下自己和两个姑娘的平生故事</description>
+      <description>浮生若梦，为欢几何？
+ 偶尔在此码些字, 记录下自己和两个姑娘的平生故事</description>
     </item>
     
   </channel>
