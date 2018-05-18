@@ -32,7 +32,6 @@ code {
   /* border:2px solid; */
   /* border-radius:25px; */
 }
-<<<<<<< HEAD
 table,tr,td, th{
   border:0.1rem;
   border-color:black;
@@ -43,8 +42,6 @@ table,tr,td, th{
   padding-left: 0.5rem;
   padding-right: 1rem;
 }
-=======
->>>>>>> ad6ae78a3bb11527996e6c10501824833f87b48f
 
 a {
   color: #3b8bba;
