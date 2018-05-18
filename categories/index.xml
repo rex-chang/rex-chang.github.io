@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 一回醉</title>
-    <link>https://1huizui.cn/categories/</link>
+    <link>https://rex-chang.github.io/categories/</link>
     <description>Recent content in Categories on 一回醉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     
-	<atom:link href="https://1huizui.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Coding</title>
-      <link>https://1huizui.cn/categories/coding/</link>
+      <link>https://rex-chang.github.io/categories/coding/</link>
       <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
       
-      <guid>https://1huizui.cn/categories/coding/</guid>
+      <guid>https://rex-chang.github.io/categories/coding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Study</title>
-      <link>https://1huizui.cn/categories/study/</link>
+      <link>https://rex-chang.github.io/categories/study/</link>
       <pubDate>Sat, 12 May 2018 21:04:29 +0800</pubDate>
       
-      <guid>https://1huizui.cn/categories/study/</guid>
+      <guid>https://rex-chang.github.io/categories/study/</guid>
       <description></description>
     </item>
     
     <item>
       <title>余生</title>
-      <link>https://1huizui.cn/categories/%E4%BD%99%E7%94%9F/</link>
+      <link>https://rex-chang.github.io/categories/%E4%BD%99%E7%94%9F/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/categories/%E4%BD%99%E7%94%9F/</guid>
+      <guid>https://rex-chang.github.io/categories/%E4%BD%99%E7%94%9F/</guid>
       <description></description>
     </item>
     
