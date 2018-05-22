@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on 一回醉居</title>
-    <link>https://1huizui.cn/tags/coding/</link>
+    <link>https://rex-chang.github.io/tags/coding/</link>
     <description>Recent content in Coding on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 22 May 2018 15:48:42 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>搭建Vue&#43;ElementUI的框架</title>
-      <link>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
+      <link>https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
       <pubDate>Tue, 22 May 2018 15:48:42 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
+      <guid>https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
       <description>&lt;p&gt;这段时间要为线上的系统写一个后台, 记录下搭建过程中遇到的问题.&lt;/p&gt;
 
 &lt;p&gt;安装 &lt;code&gt;vue-cli&lt;/code&gt; 和 &lt;code&gt;element-ui&lt;/code&gt; 都没什么好说的, 按部就班的走下来就可以了&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>OSI七层网络模型与TCPIP四层网络模型</title>
-      <link>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
       <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -40,10 +40,10 @@
     
     <item>
       <title>Laravel集成腾讯云短信</title>
-      <link>https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
+      <link>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
       <pubDate>Wed, 25 Apr 2018 13:59:05 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
+      <guid>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
       <description>&lt;p&gt;开了几次会, 产品终于定下来接入腾讯云短信平台&lt;/p&gt;
 
 &lt;p&gt;本来想装装逼, 结果 composer一下子就装好了..&lt;/p&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>写Lavavel遇到的一些坑</title>
-      <link>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <link>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <guid>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
       <description>&lt;p&gt;最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网络 on 一回醉居</title>
-    <link>https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/</link>
+    <link>https://rex-chang.github.io/categories/%E7%BD%91%E7%BB%9C/</link>
     <description>Recent content in 网络 on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 17 May 2018 11:12:12 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>通过ssh反向代理&#43;跳板机访问内网机器</title>
-      <link>https://1huizui.cn/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</link>
+      <link>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</link>
       <pubDate>Thu, 17 May 2018 11:12:12 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</guid>
+      <guid>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</guid>
       <description>&lt;p&gt;闲来无事在家里整了台Linux服务器, 想在外网访问时发现电信光猫无法做端口映射, 于是用手头闲置的云服做了个跳板机.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -47,10 +47,10 @@
     
     <item>
       <title>OSI七层网络模型与TCPIP四层网络模型</title>
-      <link>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
       <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
