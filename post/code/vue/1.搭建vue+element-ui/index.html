@@ -250,6 +250,8 @@
 
 <p>当在 <code>main.js</code> 导入 <code>element-ui</code>时, 却报错:</p>
 
+<p></p>
+
 <pre><code class="language-bash">ERROR in ./node_modules/element-ui/lib/theme-chalk/fonts/element-icons.ttf
 Module parse failed: Unexpected character ' ' (1:0)
 You may need an appropriate loader to handle this file type.
@@ -269,14 +271,14 @@ You may need an appropriate loader to handle this file type.
  @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/dev-server ./src/main.js
 </code></pre>
 
-<p>查了下, 应该是<code>webpack</code></p>
+<p>查了下, 应该是 <code>webpack.config.js</code> 中需要加入解析规则</p>
 
-<pre><code class="language-javascript">{
+<pre><code class="language-javascript">//module/rule下面
+{
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'file-loader'
 }
 </code></pre>
-
 
   
 <div class="prev-next-post pure-g">

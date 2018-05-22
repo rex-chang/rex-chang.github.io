@@ -18,10 +18,13 @@
       <pubDate>Tue, 22 May 2018 15:48:42 +0800</pubDate>
       
       <guid>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
-      <description>这段时间要为线上的系统写一个后台, 记录下搭建过程中遇到的问题.
-安装 vue-cli 和 element-ui 都没什么好说的, 按部就班的走下来就可以了
-当在 main.js 导入 element-ui时, 却报错:
-ERROR in ./node_modules/element-ui/lib/theme-chalk/fonts/element-icons.ttf Module parse failed: Unexpected character &#39; &#39; (1:0) You may need an appropriate loader to handle this file type. (Source code omitted for this binary file) @ ./node_modules/css-loader!./node_modules/element-ui/lib/theme-chalk/index.css 7:411-447 @ ./node_modules/element-ui/lib/theme-chalk/index.css @ ./src/main.js @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/dev-server ./src/main.js ERROR in ./node_modules/element-ui/lib/theme-chalk/fonts/element-icons.woff Module parse failed: Unexpected character &#39; &#39; (1:4) You may need an appropriate loader to handle this file type.</description>
+      <description>&lt;p&gt;这段时间要为线上的系统写一个后台, 记录下搭建过程中遇到的问题.&lt;/p&gt;
+
+&lt;p&gt;安装 &lt;code&gt;vue-cli&lt;/code&gt; 和 &lt;code&gt;element-ui&lt;/code&gt; 都没什么好说的, 按部就班的走下来就可以了&lt;/p&gt;
+
+&lt;p&gt;当在 &lt;code&gt;main.js&lt;/code&gt; 导入 &lt;code&gt;element-ui&lt;/code&gt;时, 却报错:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
