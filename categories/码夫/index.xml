@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coding on 一回醉居</title>
-    <link>https://1huizui.cn/tags/coding/</link>
-    <description>Recent content in Coding on 一回醉居</description>
+    <title>码夫 on 一回醉居</title>
+    <link>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</link>
+    <description>Recent content in 码夫 on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 22 May 2018 15:48:42 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,14 +25,23 @@ ERROR in ./node_modules/element-ui/lib/theme-chalk/fonts/element-icons.ttf Modul
     </item>
     
     <item>
-      <title>OSI七层网络模型与TCPIP四层网络模型</title>
-      <link>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
+      <title>Laravel解析env配置</title>
+      <link>https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 27 Apr 2018 16:17:19 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
-      <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;业务需求需要写一些脚本来导入数据, 但是在&lt;code&gt;wsl&lt;/code&gt;下面, &lt;code&gt;php artisan make:command xxx&lt;/code&gt; 实在是卡, 于是选择了直接写. 需要解析 &lt;code&gt;.env&lt;/code&gt; 来读取配置, 于是简单了解了下 Laravel 解析配置的方法&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>屏蔽安卓退出全屏的提示</title>
+      <link>https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</link>
+      <pubDate>Wed, 25 Apr 2018 18:21:48 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</guid>
+      <description>&lt;p&gt;屏蔽安卓退出全屏的提示, 适用于盒子&lt;br /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>

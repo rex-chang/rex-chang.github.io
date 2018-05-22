@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on 一回醉居</title>
-    <link>https://1huizui.cn/tags/linux/</link>
-    <description>Recent content in Linux on 一回醉居</description>
+    <title>网络 on 一回醉居</title>
+    <link>https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 网络 on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 17 May 2018 11:12:12 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -54,16 +54,6 @@
       <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>开启BBR加速</title>
-      <link>https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</link>
-      <pubDate>Mon, 23 Apr 2018 14:27:13 +0800</pubDate>
-      
-      <guid>https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</guid>
-      <description>&lt;p&gt;开启Linux BBR加速&lt;br /&gt;
-&lt;/p&gt;</description>
     </item>
     
   </channel>

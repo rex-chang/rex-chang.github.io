@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on 一回醉居</title>
+    <link>https://1huizui.cn/tags/vue/</link>
+    <description>Recent content in Vue on 一回醉居</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 May 2018 15:48:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://1huizui.cn/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>搭建Vue&#43;ElementUI的框架</title>
+      <link>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
+      <pubDate>Tue, 22 May 2018 15:48:42 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
+      <description>这段时间要为线上的系统写一个后台, 记录下搭建过程中遇到的问题.
+安装 vue-cli 和 element-ui 都没什么好说的, 按部就班的走下来就可以了
+当在 main.js 导入 element-ui时, 却报错:
+ERROR in ./node_modules/element-ui/lib/theme-chalk/fonts/element-icons.ttf Module parse failed: Unexpected character &#39; &#39; (1:0) You may need an appropriate loader to handle this file type. (Source code omitted for this binary file) @ ./node_modules/css-loader!./node_modules/element-ui/lib/theme-chalk/index.css 7:411-447 @ ./node_modules/element-ui/lib/theme-chalk/index.css @ ./src/main.js @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/dev-server ./src/main.js ERROR in ./node_modules/element-ui/lib/theme-chalk/fonts/element-icons.woff Module parse failed: Unexpected character &#39; &#39; (1:4) You may need an appropriate loader to handle this file type.</description>
+    </item>
+    
+  </channel>
+</rss>
