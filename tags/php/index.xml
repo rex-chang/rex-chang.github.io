@@ -2,32 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on 一回醉居</title>
-    <link>https://rex-chang.github.io/tags/php/</link>
+    <link>https://1huizui.cn/tags/php/</link>
     <description>Recent content in Php on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 27 Apr 2018 16:17:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 May 2018 10:47:44 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Pip跳过已安装的包</title>
+      <link>https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</link>
+      <pubDate>Fri, 25 May 2018 10:47:44 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</guid>
+      <description>&lt;p&gt;运维新给了一台服务器, 安装 &lt;code&gt;mycli&lt;/code&gt; 时报错:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Cannot uninstall &#39;configobj&#39;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;于是Google了下, 加上参数 &lt;code&gt;--ignore-installed&lt;/code&gt; 即可:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install --ignore-installed mycli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;顺便吐槽一下百度, 什么都搜不到.&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Laravel解析env配置</title>
-      <link>https://rex-chang.github.io/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</link>
+      <link>https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 27 Apr 2018 16:17:19 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;业务需求需要写一些脚本来导入数据, 但是在&lt;code&gt;wsl&lt;/code&gt;下面, &lt;code&gt;php artisan make:command xxx&lt;/code&gt; 实在是卡, 于是选择了直接写. 需要解析 &lt;code&gt;.env&lt;/code&gt; 来读取配置, 于是简单了解了下 Laravel 解析配置的方法&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Laravel集成腾讯云短信</title>
-      <link>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
+      <link>https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
       <pubDate>Wed, 25 Apr 2018 13:59:05 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
+      <guid>https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
       <description>&lt;p&gt;开了几次会, 产品终于定下来接入腾讯云短信平台&lt;/p&gt;
 
 &lt;p&gt;本来想装装逼, 结果 composer一下子就装好了..&lt;/p&gt;
@@ -37,10 +57,10 @@
     
     <item>
       <title>写Lavavel遇到的一些坑</title>
-      <link>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <link>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <guid>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
       <description>&lt;p&gt;最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
