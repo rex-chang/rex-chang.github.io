@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</loc>
+    <lastmod>2018-06-08T12:06:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</loc>
+    <lastmod>2018-05-26T09:57:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</loc>
     <lastmod>2018-05-25T10:47:44+08:00</lastmod>
   </url>
@@ -116,7 +126,19 @@
   
   <url>
     <loc>https://1huizui.cn/post/</loc>
-    <lastmod>2018-05-25T10:47:44+08:00</lastmod>
+    <lastmod>2018-06-08T12:06:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</loc>
+    <lastmod>2018-05-26T09:57:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</loc>
+    <lastmod>2018-06-08T12:06:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -151,7 +173,7 @@
   
   <url>
     <loc>https://1huizui.cn/</loc>
-    <lastmod>2018-05-25T10:47:44+08:00</lastmod>
+    <lastmod>2018-06-08T12:06:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   

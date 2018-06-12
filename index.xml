@@ -7,10 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 May 2018 10:47:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jun 2018 12:06:28 +0800</lastBuildDate>
     
 	<atom:link href="https://1huizui.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Redis的数据结构与对象(2): 链表及字典</title>
+      <link>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</link>
+      <pubDate>Fri, 08 Jun 2018 12:06:28 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</guid>
+      <description>&lt;h1 id=&#34;链表&#34;&gt;链表&lt;/h1&gt;
+
+&lt;p&gt;链表提供了高效的节点重排能力, 以及顺序性的节点访问方式, 并且可以通过增删节点来灵活地调整链表的长度.&lt;/p&gt;
+
+&lt;p&gt;链表在Redis中的应用非常广泛, 比如列表键的底层实现之一就是链表。当一个列表键包含了数量比较多的元素, 又或者列表中包含的元素都是比较长的字符串时, Redis就会使用链表作为列表键的底层实现.&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Redis的数据结构与对象(1): 字符串</title>
+      <link>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</link>
+      <pubDate>Sat, 26 May 2018 09:57:23 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</guid>
+      <description>&lt;p&gt;[Redis设计与实现] 的读书笔记.&lt;br /&gt;
+手头的书籍略老,是基于&lt;code&gt;Redis2.9&lt;/code&gt;, 阅读时参照 &lt;code&gt;Redis4.0.9&lt;/code&gt;进行了相应的修改.&lt;/p&gt;
+
+&lt;h1 id=&#34;简单动态字符串&#34;&gt;简单动态字符串&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;Red&lt;/code&gt;没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.&lt;br /&gt;
+C字符串只会作为字符串字面量用在一些无需对字符串进行修改的地方,比如用于打印日志:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;    redisLog(REDIS_WARNING, &amp;quot;Redis is now ready to exit, good bye...&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>Pip跳过已安装的包</title>
@@ -23,7 +55,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Cannot uninstall &#39;configobj&#39;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;于是Google了下, 加上参数 &lt;code&gt;--ignore-installed&lt;/code&gt; 即可:&lt;/p&gt;
+&lt;p&gt;加上参数 &lt;code&gt;--ignore-installed&lt;/code&gt; 即可:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install --ignore-installed mycli
 &lt;/code&gt;&lt;/pre&gt;

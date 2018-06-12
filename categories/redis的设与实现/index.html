@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.39" />
 
-  <title>一回醉居</title>
+  <title>Redis的设与实现 &middot; 一回醉居</title>
 
   
   
@@ -40,7 +40,7 @@
 
  
   
-  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://1huizui.cn/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" />
   
 
   
@@ -113,7 +113,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://1huizui.cn/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     
 
@@ -218,41 +218,25 @@
 
 
 <div class="header">
-  <h1>一回醉居</h1>
-  <h2>偶尔记点事情</h2>
+    <h1>Redis的设与实现</h1>
 </div>
 
 <div class="content">
-  
-    <article>
+     <article>
   <header>
-    <h2><a href="https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">开启BBR加速</a></h2>
+    <h2><a href="https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Redis的数据结构与对象(1): 字符串</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>23 Apr 2018, 14:27</time>
+    <time>26 May 2018, 09:57</time>
   </div>
 
   
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/linux">Linux</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/bbr">bbr</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/ss">ss</a>
-    
-  </div>
-  
   
 
 </div>
@@ -260,145 +244,25 @@
   </header>
 
   <p>
-  <p>开启Linux BBR加速<br />
-</p>
+  <p>[Redis设计与实现] 的读书笔记.<br />
+手头的书籍略老,是基于<code>Redis2.9</code>, 阅读时参照 <code>Redis4.0.9</code>进行了相应的修改.</p>
+
+<h1 id="简单动态字符串">简单动态字符串</h1>
+
+<p><code>Red</code>没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.<br />
+C字符串只会作为字符串字面量用在一些无需对字符串进行修改的地方,比如用于打印日志:</p>
+
+<pre><code class="language-c">    redisLog(REDIS_WARNING, &quot;Redis is now ready to exit, good bye...&quot;);
+</code></pre>
   </p>
 
   
   <footer>
-    <a href="https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">写Lavavel遇到的一些坑</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/coding">coding</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/php">php</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/laravel">laravel</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.<br />
-</p>
-  </p>
-
-  
-  <footer>
-    <a href="https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/article/first_night/">加班到深夜</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>闺女到这个点竟然还没有醒.<br />
-</p>
-  </p>
-
-  
-  <footer>
-    <a href="https://1huizui.cn/post/article/first_night/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/article/first/">用Hugo搭了个Blog</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  用Hugo搭了个静态博客.
-  </p>
-
-  
-</article>
-
-  
-
-  
-
-
-<nav class="pagination" role="pagination">
-  
-  <a href="https://1huizui.cn/"><i class="fa fa-chevron-left"></i></a>
-  
-  <span>&nbsp;2 / 2&nbsp;</span>
-  
-  <i class="fa fa-chevron-right"></i>
-  
-</nav>
-
-
-
+ 
 </div>
 
 </div>
@@ -423,4 +287,3 @@
 
 </body>
 </html>
-

@@ -23,7 +23,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Cannot uninstall &#39;configobj&#39;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;于是Google了下, 加上参数 &lt;code&gt;--ignore-installed&lt;/code&gt; 即可:&lt;/p&gt;
+&lt;p&gt;加上参数 &lt;code&gt;--ignore-installed&lt;/code&gt; 即可:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install --ignore-installed mycli
 &lt;/code&gt;&lt;/pre&gt;

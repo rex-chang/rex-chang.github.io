@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.39" />
 
-  <title>一回醉居</title>
+  <title>Redis的设计与实现 &middot; 一回醉居</title>
 
   
   
@@ -40,7 +40,7 @@
 
  
   
-  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://1huizui.cn/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" />
   
 
   
@@ -113,7 +113,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://1huizui.cn/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     
 
@@ -218,41 +218,25 @@
 
 
 <div class="header">
-  <h1>一回醉居</h1>
-  <h2>偶尔记点事情</h2>
+    <h1>Redis的设计与实现</h1>
 </div>
 
 <div class="content">
-  
-    <article>
+     <article>
   <header>
-    <h2><a href="https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">开启BBR加速</a></h2>
+    <h2><a href="https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>23 Apr 2018, 14:27</time>
+    <time>08 Jun 2018, 12:06</time>
   </div>
 
   
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/linux">Linux</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/bbr">bbr</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/ss">ss</a>
-    
-  </div>
-  
   
 
 </div>
@@ -260,145 +244,21 @@
   </header>
 
   <p>
-  <p>开启Linux BBR加速<br />
+  <h1 id="链表">链表</h1>
+
+<p>链表提供了高效的节点重排能力, 以及顺序性的节点访问方式, 并且可以通过增删节点来灵活地调整链表的长度.</p>
+
+<p>链表在Redis中的应用非常广泛, 比如列表键的底层实现之一就是链表。当一个列表键包含了数量比较多的元素, 又或者列表中包含的元素都是比较长的字符串时, Redis就会使用链表作为列表键的底层实现.<br />
 </p>
   </p>
 
   
   <footer>
-    <a href="https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">写Lavavel遇到的一些坑</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/coding">coding</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/php">php</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/laravel">laravel</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.<br />
-</p>
-  </p>
-
-  
-  <footer>
-    <a href="https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/article/first_night/">加班到深夜</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>闺女到这个点竟然还没有醒.<br />
-</p>
-  </p>
-
-  
-  <footer>
-    <a href="https://1huizui.cn/post/article/first_night/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/article/first/">用Hugo搭了个Blog</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  用Hugo搭了个静态博客.
-  </p>
-
-  
-</article>
-
-  
-
-  
-
-
-<nav class="pagination" role="pagination">
-  
-  <a href="https://1huizui.cn/"><i class="fa fa-chevron-left"></i></a>
-  
-  <span>&nbsp;2 / 2&nbsp;</span>
-  
-  <i class="fa fa-chevron-right"></i>
-  
-</nav>
-
-
-
+ 
 </div>
 
 </div>
@@ -423,4 +283,3 @@
 
 </body>
 </html>
-
