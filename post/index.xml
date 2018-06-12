@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 一回醉居</title>
-    <link>https://1huizui.cn/post/</link>
+    <link>https://rex-chang.github.io/post/</link>
     <description>Recent content in Posts on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Fri, 08 Jun 2018 12:06:28 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Redis的数据结构与对象(2): 链表及字典</title>
-      <link>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</link>
+      <link>https://rex-chang.github.io/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</link>
       <pubDate>Fri, 08 Jun 2018 12:06:28 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</guid>
+      <guid>https://rex-chang.github.io/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</guid>
       <description>&lt;h1 id=&#34;链表&#34;&gt;链表&lt;/h1&gt;
 
 &lt;p&gt;链表提供了高效的节点重排能力, 以及顺序性的节点访问方式, 并且可以通过增删节点来灵活地调整链表的长度.&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Redis的数据结构与对象(1): 字符串</title>
-      <link>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</link>
+      <link>https://rex-chang.github.io/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</link>
       <pubDate>Sat, 26 May 2018 09:57:23 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</guid>
+      <guid>https://rex-chang.github.io/post/code/c/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</guid>
       <description>&lt;p&gt;[Redis设计与实现] 的读书笔记.&lt;br /&gt;
 手头的书籍略老,是基于&lt;code&gt;Redis2.9&lt;/code&gt;, 阅读时参照 &lt;code&gt;Redis4.0.9&lt;/code&gt;进行了相应的修改.&lt;/p&gt;
 
@@ -46,10 +46,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>Pip跳过已安装的包</title>
-      <link>https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</link>
+      <link>https://rex-chang.github.io/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</link>
       <pubDate>Fri, 25 May 2018 10:47:44 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</guid>
+      <guid>https://rex-chang.github.io/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/</guid>
       <description>&lt;p&gt;运维新给了一台服务器, 安装 &lt;code&gt;mycli&lt;/code&gt; 时报错:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Cannot uninstall &#39;configobj&#39;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
@@ -66,10 +66,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>搭建Vue&#43;ElementUI的框架</title>
-      <link>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
+      <link>https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
       <pubDate>Tue, 22 May 2018 15:48:42 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
+      <guid>https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
       <description>&lt;p&gt;这段时间要为线上的系统写一个后台, 记录下搭建过程中遇到的问题.&lt;/p&gt;
 
 &lt;p&gt;安装 &lt;code&gt;vue-cli&lt;/code&gt; 和 &lt;code&gt;element-ui&lt;/code&gt; 都没什么好说的, 按部就班的走下来就可以了&lt;/p&gt;
@@ -81,10 +81,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>通过ssh反向代理&#43;跳板机访问内网机器</title>
-      <link>https://1huizui.cn/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</link>
+      <link>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</link>
       <pubDate>Thu, 17 May 2018 11:12:12 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</guid>
+      <guid>https://rex-chang.github.io/post/net/%E9%80%9A%E8%BF%87ssh%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86&#43;%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%BA%E5%99%A8/</guid>
       <description>&lt;p&gt;闲来无事在家里整了台Linux服务器, 想在外网访问时发现电信光猫无法做端口映射, 于是用手头闲置的云服做了个跳板机.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -114,10 +114,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>英语学习笔记001</title>
-      <link>https://1huizui.cn/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</link>
+      <link>https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</link>
       <pubDate>Sat, 12 May 2018 21:04:29 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</guid>
+      <guid>https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/</guid>
       <description>&lt;p&gt;主要记录一些词汇, 日常用的, 学习中遇到的&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -125,10 +125,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>OSI七层网络模型与TCPIP四层网络模型</title>
-      <link>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Fri, 11 May 2018 12:44:04 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://rex-chang.github.io/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
       <description>&lt;p&gt;整理自&lt;em&gt;印象笔记&lt;/em&gt;, OSI七层网络模型与TCPIP四层网络模型&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -136,30 +136,30 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>Laravel解析env配置</title>
-      <link>https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</link>
+      <link>https://rex-chang.github.io/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 27 Apr 2018 16:17:19 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://rex-chang.github.io/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;业务需求需要写一些脚本来导入数据, 但是在&lt;code&gt;wsl&lt;/code&gt;下面, &lt;code&gt;php artisan make:command xxx&lt;/code&gt; 实在是卡, 于是选择了直接写. 需要解析 &lt;code&gt;.env&lt;/code&gt; 来读取配置, 于是简单了解了下 Laravel 解析配置的方法&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>屏蔽安卓退出全屏的提示</title>
-      <link>https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</link>
+      <link>https://rex-chang.github.io/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</link>
       <pubDate>Wed, 25 Apr 2018 18:21:48 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</guid>
+      <guid>https://rex-chang.github.io/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/</guid>
       <description>&lt;p&gt;屏蔽安卓退出全屏的提示, 适用于盒子&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Laravel集成腾讯云短信</title>
-      <link>https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
+      <link>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</link>
       <pubDate>Wed, 25 Apr 2018 13:59:05 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
+      <guid>https://rex-chang.github.io/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/</guid>
       <description>&lt;p&gt;开了几次会, 产品终于定下来接入腾讯云短信平台&lt;/p&gt;
 
 &lt;p&gt;本来想装装逼, 结果 composer一下子就装好了..&lt;/p&gt;
@@ -169,40 +169,40 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     
     <item>
       <title>开启BBR加速</title>
-      <link>https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</link>
+      <link>https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Mon, 23 Apr 2018 14:27:13 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</guid>
+      <guid>https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</guid>
       <description>&lt;p&gt;开启Linux BBR加速&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>写Lavavel遇到的一些坑</title>
-      <link>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <link>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <guid>https://rex-chang.github.io/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
       <description>&lt;p&gt;最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>加班到深夜</title>
-      <link>https://1huizui.cn/post/article/first_night/</link>
+      <link>https://rex-chang.github.io/post/article/first_night/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/article/first_night/</guid>
+      <guid>https://rex-chang.github.io/post/article/first_night/</guid>
       <description>&lt;p&gt;闺女到这个点竟然还没有醒.&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用Hugo搭了个Blog</title>
-      <link>https://1huizui.cn/post/article/first/</link>
+      <link>https://rex-chang.github.io/post/article/first/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/article/first/</guid>
+      <guid>https://rex-chang.github.io/post/article/first/</guid>
       <description>用Hugo搭了个静态博客.</description>
     </item>
     

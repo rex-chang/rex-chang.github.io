@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bbr on 一回醉居</title>
-    <link>https://1huizui.cn/tags/bbr/</link>
+    <link>https://rex-chang.github.io/tags/bbr/</link>
     <description>Recent content in Bbr on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 23 Apr 2018 14:27:13 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/tags/bbr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/tags/bbr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>开启BBR加速</title>
-      <link>https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</link>
+      <link>https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Mon, 23 Apr 2018 14:27:13 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</guid>
+      <guid>https://rex-chang.github.io/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/</guid>
       <description>&lt;p&gt;开启Linux BBR加速&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
