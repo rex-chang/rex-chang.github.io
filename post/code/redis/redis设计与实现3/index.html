@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.39" />
 
-  <title>写Lavavel遇到的一些坑 &middot; 一回醉居</title>
+  <title>Redis的数据结构与对象(3): 跳跃表及整数集合 &middot; 一回醉居</title>
 
   
   
@@ -212,7 +212,7 @@
 
 
 <div class="header">
-  <h1>写Lavavel遇到的一些坑</h1>
+  <h1>Redis的数据结构与对象(3): 跳跃表及整数集合</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -221,124 +221,145 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Apr 2018, 01:08</time>
+    <time>09 Jun 2018, 13:24</time>
   </div>
 
   
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/coding">coding</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/php">php</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/laravel">laravel</a>
-    
-  </div>
-  
   
 
 </div>
 
-  <p>最近在做一个项目, 后端选型使用了 Laravel 5.6, 第一次使用这个框架, 记录下使用过程中遇到的问题.<br />
+  <h1 id="跳跃表">跳跃表</h1>
+
+<p>Redis使用跳跃表作为有序集合键的底层实现之一,  如果一个有序集合包含的元素比较多, 或者有序集合中的元素是比较长的字符串时, Redis会使用跳跃表来作为有序集合的底层实现.</p>
+
+<p>关于跳跃表的原理, 可以参考:</p>
+
+<blockquote>
+<p><a href="http://blog.jobbole.com/111731/">漫画算法：什么是跳跃表？</a></p>
+</blockquote>
+
+<p>在大部分情况下, 跳跃表的效率可以和平衡树相媲美, 并且因为跳跃表的实现比平衡树要来得更为简单, 所以有不少程序都使用跳跃表来代替平衡树.<br />
 </p>
 
-<h3 id="providers-服务提供者-篇">Providers(服务提供者)篇</h3>
+<h2 id="跳跃表的实现">跳跃表的实现</h2>
 
-<blockquote>
-<p>文档地址: <a href="https://laravel-china.org/docs/laravel/5.6/providers">https://laravel-china.org/docs/laravel/5.6/providers</a></p>
-</blockquote>
+<p>代码位置:</p>
 
-<p>Provider的类名中,<strong><span color="red">不能包含数字</span></strong>, 否则无法正常引导</p>
+<pre><code class="language-h">//server.h
+/* ZSETs use a specialized version of Skiplists */
+typedef struct zskiplistNode { //跳跃表节点
+    sds ele; //数据域, 或者说键名
+    double score;//分值
+    struct zskiplistNode *backward;//指向当前节点的前一个节点
+    struct zskiplistLevel {
+        struct zskiplistNode *forward; //指向前方节点的指针
+        unsigned int span; //跨度, 记录两个节点之间的距离
+    } level[];
+} zskiplistNode;
 
-<h3 id="参数传递">参数传递</h3>
-
-<blockquote>
-<p>参考引用: <a href="https://segmentfault.com/a/1190000007227276">https://segmentfault.com/a/1190000007227276</a></p>
-</blockquote>
-
-<p>有时需要在中间中把参数传递到控制器中，则可以通过Request对象作为传输管道，代码如下：</p>
-
-<pre><code class="language-php">namespace App\Http\Middleware;
-
-use Closure;
-
-class ControllerParameter
-{
-    /**
-     * Handle an incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
-     */
-    public function handle($request, Closure $next, $role)
-    {
-        $request-&gt;attributes-&gt;add(compact('role')); // 'client'
-        return $next($request);
-    }
-}
+typedef struct zskiplist { //跳跃表
+    struct zskiplistNode *header, *tail; //分别指向跳跃表的头部节点, 表尾节点
+    unsigned long length; //跳跃表长度
+    int level; //记录目前跳跃表内，层数最大的那个节点的层数（表头节点的层数不计算在内）
+} zskiplist;
 </code></pre>
 
-<p>控制器中使用Request对象获取$role参数：</p>
+<p>在同一个跳跃表中, 各个节点保存的成员对象必须是唯一的, 但是多个节点保存的分值却可以是相同的: 分值相同的节点将按照成员对象在字典序中的大小来进行排序, 成员对象较小的节点会排在前面（靠近表头的方向）, 而成员对象较大的节点则会排在后面（靠近表尾的方向）.</p>
 
-<pre><code class="language-php">namespace App\Http\Controllers\RouteParameter;
+<ul>
+<li>每个跳跃表节点的层高都是1至32之间的随机数.<br /></li>
+<li>跳跃表中的节点按照分值大小进行排序，当分值相同时，节点按照成员对象的大小进行排序.<br />
+<br /></li>
+</ul>
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+<h1 id="整数集合">整数集合</h1>
 
-class MiddlewareToController extends Controller
-{
-    public function index(Request $request)
-    {
-        dd($request-&gt;get('role'));
-    }
-}
+<p>整数集合(intset)是集合键的底层实现之一, 当一个集合只包含整数值元素, 并且这个集合的元素数量不多时, Redis就会使用整数集合作为集合键的底层实现.<br />
+例如, 我们创建了一个只包含五个元素的集合键, 那么这个集合键的底层实现就是整数集合:</p>
+
+<pre><code class="language-bash">redis&gt; SADD numbers 1 3 5 7 9
+(integer) 5
+redis&gt; OBJECT ENCODING numbers
 </code></pre>
 
-<h3 id="存储篇">存储篇</h3>
+<h2 id="intset定义">intset定义:</h2>
 
-<blockquote>
-<p>redis文档:  <a href="https://laravel-china.org/docs/laravel/5.6/redis">https://laravel-china.org/docs/laravel/5.6/redis</a></p>
-</blockquote>
+<pre><code class="language-h">//intset.h
+typedef struct intset {
+    uint32_t encoding; //contents的真正类型
+    uint32_t length; //数组的长度
+    int8_t contents[];
+} intset;
+</code></pre>
 
-<p>使用<code>facade</code>中redis中的返回值并不一定与<code>phpredis</code>扩展所返回一致.<br />
-查看了下</p>
+<p>contents 是整数集合的底层实现, 整数集合的每个元素都是contents数组的一个元素. 各项在数组中按值的大小从小到大有序排列, 并且数组中不包含重复项.</p>
 
-<blockquote>
-<p>\laravel\framework\src\Illuminate\Redis\Connections<br />
-\PhpRedisConnection.php</p>
-</blockquote>
+<p>整数集合中插入一个新元素时:</p>
 
-<p>代码中,  将返回值类型改掉了</p>
+<pre><code class="language-h">//intset.h
 
-<pre><code class="language-php">public function hmget($key, ...$dictionary)
-    {
-        if (count($dictionary) == 1) {
-            $dictionary = $dictionary[0];
+/* Insert an integer in the intset */
+intset *intsetAdd(intset *is, int64_t value, uint8_t *success) {
+    uint8_t valenc = _intsetValueEncoding(value);
+    uint32_t pos;
+    if (success) *success = 1;
+
+    /* Upgrade encoding if necessary. If we need to upgrade, we know that
+     * this value should be either appended (if &gt; 0) or prepended (if &lt; 0),
+     * because it lies outside the range of existing values. */
+    if (valenc &gt; intrev32ifbe(is-&gt;encoding)) {//需要对底层数据进行升级
+        /* This always succeeds, so we don't need to curry *success. */
+        return intsetUpgradeAndAdd(is,value);
+    } else {
+        /* Abort if the value is already present in the set.
+         * This call will populate &quot;pos&quot; with the right position to insert
+         * the value when it cannot be found. */
+        if (intsetSearch(is,value,&amp;pos)) {//检索应该插入的位置
+            //数据存在时忽略插入
+            if (success) *success = 0;
+            return is;
         }
 
-        return array_values($this-&gt;command('hmget', [$key, $dictionary]));
+        is = intsetResize(is,intrev32ifbe(is-&gt;length)+1);
+        if (pos &lt; intrev32ifbe(is-&gt;length)) intsetMoveTail(is,pos,pos+1);
     }
+
+    _intsetSet(is,pos,value);//插入到数组集合
+    is-&gt;length = intrev32ifbe(intrev32ifbe(is-&gt;length)+1);
+    return is;
+}
+
+//获取数据类型
+static uint8_t _intsetValueEncoding(int64_t v) {
+    if (v &lt; INT32_MIN || v &gt; INT32_MAX)
+        return INTSET_ENC_INT64;
+    else if (v &lt; INT16_MIN || v &gt; INT16_MAX)
+        return INTSET_ENC_INT32;
+    else
+        return INTSET_ENC_INT16;
+}
 </code></pre>
+
+<h2 id="关于升级">关于升级</h2>
+
+<p>升级的最主要目的在于节约内存.<br />
+例如，如果我们一直只向整数集合添加int16_t类型的值，那么整数集合的底层实现就会一直是int16_t类型的数组，只有在我们要将int32_t类型或者int64_t类型的值添加到集合时，程序才会对数组进行升级</p>
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://1huizui.cn/post/article/first_night/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://1huizui.cn/post/article/first_night/">加班到深夜</a>
+      <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a>
     </nav>
     
   </div>
@@ -348,13 +369,13 @@ class MiddlewareToController extends Controller
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/">开启BBR加速</a>
+      <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">Redis的数据结构与对象(4): 压缩列表</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://1huizui.cn/post/code/%E5%BC%80%E5%90%AFbbr%E5%8A%A0%E9%80%9F/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
