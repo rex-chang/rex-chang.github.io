@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Jun 2018 22:15:44 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Dec 2018 14:41:28 +0800</lastBuildDate>
     
 	<atom:link href="https://1huizui.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>go get 翻墙</title>
+      <link>https://1huizui.cn/post/golang/fuckgfw/</link>
+      <pubDate>Thu, 20 Dec 2018 14:41:28 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/golang/fuckgfw/</guid>
+      <description>&lt;p&gt;安装 Gin 的时候, 报错:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Redis的数据结构与对象(4): 压缩列表</title>

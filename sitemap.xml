@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://1huizui.cn/post/golang/fuckgfw/</loc>
+    <lastmod>2018-12-20T14:41:28+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/</loc>
     <lastmod>2018-06-11T22:15:44+08:00</lastmod>
   </url>
@@ -111,6 +116,24 @@
   </url>
   
   <url>
+    <loc>https://1huizui.cn/tags/gin/</loc>
+    <lastmod>2018-12-20T14:41:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/tags/go/</loc>
+    <lastmod>2018-12-20T14:41:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/tags/golang/</loc>
+    <lastmod>2018-12-20T14:41:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://1huizui.cn/tags/laravel/</loc>
     <lastmod>2018-05-25T10:47:44+08:00</lastmod>
     <priority>0</priority>
@@ -136,7 +159,7 @@
   
   <url>
     <loc>https://1huizui.cn/post/</loc>
-    <lastmod>2018-06-11T22:15:44+08:00</lastmod>
+    <lastmod>2018-12-20T14:41:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,7 +206,7 @@
   
   <url>
     <loc>https://1huizui.cn/</loc>
-    <lastmod>2018-06-11T22:15:44+08:00</lastmod>
+    <lastmod>2018-12-20T14:41:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   

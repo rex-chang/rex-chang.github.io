@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on 一回醉居</title>
+    <link>https://1huizui.cn/tags/go/</link>
+    <description>Recent content in Go on 一回醉居</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 20 Dec 2018 14:41:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://1huizui.cn/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>go get 翻墙</title>
+      <link>https://1huizui.cn/post/golang/fuckgfw/</link>
+      <pubDate>Thu, 20 Dec 2018 14:41:28 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/golang/fuckgfw/</guid>
+      <description>&lt;p&gt;安装 Gin 的时候, 报错:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
