@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vue on 一回醉居</title>
-    <link>https://rex-chang.github.io/tags/vue/</link>
+    <link>https://1huizui.cn/tags/vue/</link>
     <description>Recent content in vue on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 22 May 2018 15:48:42 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>搭建Vue&#43;ElementUI的框架</title>
-      <link>https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
+      <link>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</link>
       <pubDate>Tue, 22 May 2018 15:48:42 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
+      <guid>https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/</guid>
       <description>&lt;p&gt;这段时间要为线上的系统写一个后台, 记录下搭建过程中遇到的问题.&lt;/p&gt;
 
 &lt;p&gt;安装 &lt;code&gt;vue-cli&lt;/code&gt; 和 &lt;code&gt;element-ui&lt;/code&gt; 都没什么好说的, 按部就班的走下来就可以了&lt;/p&gt;
