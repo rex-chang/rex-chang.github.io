@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ops on 一回醉居</title>
-    <link>https://1huizui.cn/tags/ops/</link>
+    <link>https://rex-chang.github.io/tags/ops/</link>
     <description>Recent content in ops on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Sat, 21 Apr 2018 01:08:15 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/tags/ops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/tags/ops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux 命令行工具</title>
-      <link>https://1huizui.cn/post/code/other/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/</link>
+      <link>https://rex-chang.github.io/post/code/other/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/other/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://rex-chang.github.io/post/code/other/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/</guid>
       <description> 最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.
 自动跳转 z.sh 自动跳转工具, 文件仅一个 shell, 在 bashrc 中引入即可.
  https://github.com/rupa/z
