@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ops on 一回醉居</title>
-    <link>https://1huizui.cn/tags/ops/</link>
+    <link>https://rex-chang.github.io/tags/ops/</link>
     <description>Recent content in ops on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 20 Aug 2019 01:08:15 +0800</lastBuildDate>
     
-	<atom:link href="https://1huizui.cn/tags/ops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rex-chang.github.io/tags/ops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux 命令行工具</title>
-      <link>https://1huizui.cn/post/code/linux/linuxbashtools/</link>
+      <link>https://rex-chang.github.io/post/code/linux/linuxbashtools/</link>
       <pubDate>Tue, 20 Aug 2019 01:08:15 +0800</pubDate>
       
-      <guid>https://1huizui.cn/post/code/linux/linuxbashtools/</guid>
+      <guid>https://rex-chang.github.io/post/code/linux/linuxbashtools/</guid>
       <description>&lt;p&gt;最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.&lt;/p&gt;
 
 &lt;h2 id=&#34;自动跳转-z-sh&#34;&gt;自动跳转 z.sh&lt;/h2&gt;
