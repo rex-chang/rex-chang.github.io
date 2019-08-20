@@ -74,7 +74,29 @@
     </item>
     
     <item>
-      <title>写Lavavel遇到的一些坑</title>
+      <title>Linux 命令行工具</title>
+      <link>https://1huizui.cn/post/code/other/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/other/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/</guid>
+      <description> 最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.
+自动跳转 z.sh 自动跳转工具, 文件仅一个 shell, 在 bashrc 中引入即可.
+ https://github.com/rupa/z
+ 命令手册：tldr  https://github.com/tldr-pages/tldr
+ od 全称应该是 &amp;laquo;object dump&amp;raquo;，可以将文件按八进制，十六进制或者其他方式显示出来。
+mycli 有代码提示的数据库命令行工具
+ pip install mycli
+ jq JSON 美化
+tree 显示目录结构, 同样的还有 nodejs 里面的 mddir, 这个需要安装 node runtime, 略显麻烦.
+ccat cat 的彩色版本
+ https://github.com/jingweno/ccat
+ 其他 文末, 推荐一个链接
+ https://wangchujiang.com/linux-command/hot.html
+ </description>
+    </item>
+    
+    <item>
+      <title>写 Lavavel 遇到的一些坑</title>
       <link>https://1huizui.cn/post/code/php/%E5%86%99laravel%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
       <pubDate>Sat, 21 Apr 2018 01:08:15 +0800</pubDate>
       

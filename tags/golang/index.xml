@@ -13,6 +13,21 @@
     
     
     <item>
+      <title>使用 Go Module 来组织代码</title>
+      <link>https://1huizui.cn/post/golang/using-go-module/</link>
+      <pubDate>Mon, 29 Apr 2019 10:43:09 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/golang/using-go-module/</guid>
+      <description>&lt;p&gt;最近一段时间, 研究了下 &lt;code&gt;Go Module&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;从 &lt;code&gt;Go 1.11&lt;/code&gt; 开始, GoLang 开始支持 &lt;code&gt;module&lt;/code&gt; 的功能.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.golang.org/using-go-modules&#34;&gt;https://blog.golang.org/using-go-modules&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>使用 Gopls 代码提示</title>
       <link>https://1huizui.cn/post/golang/gopls/</link>
       <pubDate>Mon, 29 Apr 2019 10:43:09 +0800</pubDate>
