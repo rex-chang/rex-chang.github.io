@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redis的设计与实现 on 一回醉居</title>
-    <link>https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <link>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
     <description>Recent content in Redis的设计与实现 on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 11 Jun 2018 22:15:44 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Redis的数据结构与对象(4): 压缩列表</title>
-      <link>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/</link>
+      <link>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/</link>
       <pubDate>Mon, 11 Jun 2018 22:15:44 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/</guid>
+      <guid>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/</guid>
       <description>压缩列表(ziplist) 压缩列表（ziplist）是列表(list)键和哈希(hash table)键的底层实现之一. 当一个列表键只包含少量列表项, 并且每个列表项要么就是小整数值, 要么就是长度比较短的字符串, 那么Redis就会使用压缩列表来做列表键的底层实现.
 未完待续..</description>
     </item>
     
     <item>
       <title>Redis的数据结构与对象(3): 跳跃表及整数集合</title>
-      <link>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/</link>
+      <link>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/</link>
       <pubDate>Sat, 09 Jun 2018 13:24:14 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/</guid>
+      <guid>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/</guid>
       <description>&lt;h1 id=&#34;跳跃表&#34;&gt;跳跃表&lt;/h1&gt;
 
 &lt;p&gt;Redis使用跳跃表作为有序集合键的底层实现之一,  如果一个有序集合包含的元素比较多, 或者有序集合中的元素是比较长的字符串时, Redis会使用跳跃表来作为有序集合的底层实现.&lt;/p&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>Redis的数据结构与对象(2): 链表及字典</title>
-      <link>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</link>
+      <link>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</link>
       <pubDate>Fri, 08 Jun 2018 12:06:28 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</guid>
+      <guid>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/</guid>
       <description>&lt;h1 id=&#34;链表&#34;&gt;链表&lt;/h1&gt;
 
 &lt;p&gt;链表提供了高效的节点重排能力, 以及顺序性的节点访问方式, 并且可以通过增删节点来灵活地调整链表的长度.&lt;/p&gt;

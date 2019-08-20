@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gin on 一回醉居</title>
-    <link>https://rex-chang.github.io/tags/gin/</link>
+    <link>https://1huizui.cn/tags/gin/</link>
     <description>Recent content in gin on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 20 Dec 2018 14:41:28 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/tags/gin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/tags/gin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>go get 翻墙</title>
-      <link>https://rex-chang.github.io/post/golang/fuckgfw/</link>
+      <link>https://1huizui.cn/post/golang/fuckgfw/</link>
       <pubDate>Thu, 20 Dec 2018 14:41:28 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/golang/fuckgfw/</guid>
+      <guid>https://1huizui.cn/post/golang/fuckgfw/</guid>
       <description>&lt;p&gt;go get 时, 会发送一个 https 请求, 此时 设置的 git 的 socks5 代理无效&lt;/p&gt;
 
 &lt;p&gt;解决方案:&lt;/p&gt;

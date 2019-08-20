@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>go on 一回醉居</title>
-    <link>https://rex-chang.github.io/tags/go/</link>
+    <link>https://1huizui.cn/tags/go/</link>
     <description>Recent content in go on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 29 Apr 2019 10:43:09 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用 Go Module 来组织代码</title>
-      <link>https://rex-chang.github.io/post/golang/using-go-module/</link>
+      <link>https://1huizui.cn/post/golang/using-go-module/</link>
       <pubDate>Mon, 29 Apr 2019 10:43:09 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/golang/using-go-module/</guid>
+      <guid>https://1huizui.cn/post/golang/using-go-module/</guid>
       <description>&lt;p&gt;最近一段时间, 研究了下 &lt;code&gt;Go Module&lt;/code&gt; .&lt;/p&gt;
 
 &lt;p&gt;从 &lt;code&gt;Go 1.11&lt;/code&gt; 开始, GoLang 开始支持 &lt;code&gt;module&lt;/code&gt; 的功能.&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>使用 Gopls 代码提示</title>
-      <link>https://rex-chang.github.io/post/golang/gopls/</link>
+      <link>https://1huizui.cn/post/golang/gopls/</link>
       <pubDate>Mon, 29 Apr 2019 10:43:09 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/golang/gopls/</guid>
+      <guid>https://1huizui.cn/post/golang/gopls/</guid>
       <description>&lt;p&gt;VSCode 使用 language server 进行代码提示.&lt;/p&gt;
 
 &lt;p&gt;代码地址:&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>go get 翻墙</title>
-      <link>https://rex-chang.github.io/post/golang/fuckgfw/</link>
+      <link>https://1huizui.cn/post/golang/fuckgfw/</link>
       <pubDate>Thu, 20 Dec 2018 14:41:28 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/golang/fuckgfw/</guid>
+      <guid>https://1huizui.cn/post/golang/fuckgfw/</guid>
       <description>&lt;p&gt;go get 时, 会发送一个 https 请求, 此时 设置的 git 的 socks5 代理无效&lt;/p&gt;
 
 &lt;p&gt;解决方案:&lt;/p&gt;
