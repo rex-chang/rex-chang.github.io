@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 29 Apr 2019 10:43:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 01:08:15 +0800</lastBuildDate>
     
 	<atom:link href="https://1huizui.cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux 命令行工具</title>
+      <link>https://1huizui.cn/post/code/linux/linuxbashtools/</link>
+      <pubDate>Tue, 20 Aug 2019 01:08:15 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/linux/linuxbashtools/</guid>
+      <description>&lt;p&gt;最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.&lt;/p&gt;
+
+&lt;h2 id=&#34;自动跳转-z-sh&#34;&gt;自动跳转 z.sh&lt;/h2&gt;
+
+&lt;p&gt;自动跳转工具, 文件仅一个 shell, 在 bashrc 中引入即可.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rupa/z&#34;&gt;https://github.com/rupa/z&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>使用 Go Module 来组织代码</title>
@@ -43,6 +60,15 @@
     </item>
     
     <item>
+      <title>中年男人的隐忍</title>
+      <link>https://1huizui.cn/post/article/about_mid_adult_man/</link>
+      <pubDate>Wed, 06 Mar 2019 01:22:14 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/article/about_mid_adult_man/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>夜深人静, 听&lt;不一定&gt;</title>
       <link>https://1huizui.cn/post/article/back_to_work_2019/</link>
       <pubDate>Wed, 06 Mar 2019 01:22:14 +0800</pubDate>
@@ -50,15 +76,6 @@
       <guid>https://1huizui.cn/post/article/back_to_work_2019/</guid>
       <description>&lt;p&gt;说什么好呢，该说什么好呢？&lt;br /&gt;
 刚回到工作中，发现自己又开始了晚上睡不着的日子。躺在床上，打开播放器，耳畔响起的是彭佳慧的&amp;lt;不一定&amp;gt;。有点惊喜，有点惆怅，有些怀念，有些疲倦，像是许久不见的好友，默默听了许久，还是不记得这首歌是什么时候加入的播放列表。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>谈中年男人的隐忍</title>
-      <link>https://1huizui.cn/post/article/about_mid_adult_man/</link>
-      <pubDate>Wed, 06 Mar 2019 01:22:14 +0800</pubDate>
-      
-      <guid>https://1huizui.cn/post/article/about_mid_adult_man/</guid>
-      <description></description>
     </item>
     
     <item>

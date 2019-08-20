@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 May 2018 10:47:44 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 01:08:15 +0800</lastBuildDate>
     
 	<atom:link href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux 命令行工具</title>
+      <link>https://1huizui.cn/post/code/linux/linuxbashtools/</link>
+      <pubDate>Tue, 20 Aug 2019 01:08:15 +0800</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/linux/linuxbashtools/</guid>
+      <description>&lt;p&gt;最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.&lt;/p&gt;
+
+&lt;h2 id=&#34;自动跳转-z-sh&#34;&gt;自动跳转 z.sh&lt;/h2&gt;
+
+&lt;p&gt;自动跳转工具, 文件仅一个 shell, 在 bashrc 中引入即可.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rupa/z&#34;&gt;https://github.com/rupa/z&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Pip跳过已安装的包</title>

@@ -3,14 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://1huizui.cn/categories/</loc>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/post/code/linux/linuxbashtools/</loc>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://1huizui.cn/post/</loc>
-    <lastmod>2019-04-29T10:43:09+08:00</lastmod>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://1huizui.cn/tags/</loc>
-    <lastmod>2019-04-29T10:43:09+08:00</lastmod>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/tags/ops/</loc>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/</loc>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</loc>
+    <lastmod>2019-08-20T01:08:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -27,12 +56,6 @@
   </url>
   
   <url>
-    <loc>https://1huizui.cn/</loc>
-    <lastmod>2019-04-29T10:43:09+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://1huizui.cn/post/golang/using-go-module/</loc>
     <lastmod>2019-04-29T10:43:09+08:00</lastmod>
   </url>
@@ -43,9 +66,8 @@
   </url>
   
   <url>
-    <loc>https://1huizui.cn/categories/</loc>
+    <loc>https://1huizui.cn/post/article/about_mid_adult_man/</loc>
     <lastmod>2019-03-06T01:22:14+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -57,11 +79,6 @@
     <loc>https://1huizui.cn/categories/%E5%B0%8F%E8%AE%B0/</loc>
     <lastmod>2019-03-06T01:22:14+08:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://1huizui.cn/post/article/about_mid_adult_man/</loc>
-    <lastmod>2019-03-06T01:22:14+08:00</lastmod>
   </url>
   
   <url>
@@ -126,12 +143,6 @@
   
   <url>
     <loc>https://1huizui.cn/tags/php/</loc>
-    <lastmod>2018-05-25T10:47:44+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</loc>
     <lastmod>2018-05-25T10:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
