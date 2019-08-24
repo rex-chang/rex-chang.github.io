@@ -272,13 +272,12 @@
   </url>
   
   <url>
-    <loc>https://1huizui.cn/archives/</loc>
+    <loc>https://1huizui.cn/topics/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://1huizui.cn/topics/</loc>
-    <priority>0</priority>
+    <loc>https://1huizui.cn/archives/</loc>
   </url>
   
 </urlset>
