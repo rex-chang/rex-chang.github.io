@@ -1,366 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="zh-cn">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="专注于IT互联网，包括但不限于Go语言(golang)、Java、Android、Python、项目管理、抖音分析、软件架构等">
-  <meta name="generator" content="Hugo 0.55.6" />
 
-  <title>一回醉居</title>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+    <title>一回醉居 | 闲来无事, 记点事情</title>
+    <meta property="og:title" content="一回醉居 | 闲来无事, 记点事情">
+    <meta property="og:type" content="website">
+    <meta name="Keywords" content="打杂的人,php,golang,nodejs">
+    <meta name="description" content="专注于IT互联网，包括但不限于Go语言(golang)、Java、Android、Python、项目管理、抖音分析、软件架构等">
+    <meta property="og:url" content="https://1huizui.cn/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
-  <!--<![endif]-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" type="application/rss+xml+xml" href="https://1huizui.cn/index.xml" title="一回醉居" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="/css/side-menu.css">
-  <!--<![endif]-->
+    
 
-  <link rel="stylesheet" href="/css/blackburn.css">
 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
- 
-  
-  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://1huizui.cn/index.xml" />
-  
-
-  
-
-  <link rel="shortcut icon" href="https://1huizui.cn/img/favicon.ico" type="image/x-icon" />
-
-  
-  
-
+    
+    
 </head>
 
 
 <body>
-<div id="layout">
-
-  
-<a href="#menu" id="menuLink" class="menu-link">
-  
-  <span></span>
-</a>
-<div id="menu">
-
-  
-  <a class="pure-menu-heading brand" href="/">骑马爬树</a>
-
-
-  <div class="pure-menu">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>关于</a>
-      
-        </li>
-      
-    </ul>
-  </div>
-
-  <div class="pure-menu social">
-  <ul class="pure-menu-list">
-
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://1huizui.cn/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/rex-chang" target="_blank">
-        <i class="fa fa-github-square fa-fw"></i>GitHub</a>
-    </li>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  </ul>
-</div>
-
-
-  <div>
-  <div class="small-print">
-    <small></small>
-  </div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" style="font-weight: bold" target="_blank">Hugo</a></small><br/>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" style="font-weight: bold" target="_blank">Blackburn</a></small><br/>
-    <small>Hosted by&nbsp;<a href="https://pages.coding.me" style="font-weight: bold" target="_blank">Coding Pages</a></small>
-    
-  </div>
-</div>
-
-</div>
-
-
-  <div id="main">
-
-
-<div class="header">
-  <h1>一回醉居</h1>
-  <h2>闲来无事, 记点事情</h2>
-</div>
-
-<div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/">Golang 培训计划(02): 你好, 认识一下?</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>24 Aug 2019, 22:41</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/go">go</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/golang/learning-golang/00.%E5%89%8D%E8%A8%80/">Golang 培训计划(01):前言</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>24 Aug 2019, 14:41</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/go">go</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>最近我司计划组织一次 <code>golang</code> 的培训, 所以将内容整理出来, 以供参考.</p>
-
-<p>内容大都参考过 <strong><a href="https://item.jd.com/11668493.html">七周七并发模型</a></strong> 及 <strong><a href="https://books.studygolang.com/gopl-zh/">Go 语言圣经</a></strong>, 感谢作者们的奉献.</p>
-  </p>
-
-  
-  <footer>
-    <a href="/post/golang/learning-golang/00.%E5%89%8D%E8%A8%80/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/article/about_mid_adult_man/">中年男人的隐忍</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>24 Aug 2019, 01:22</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>　　有点沉重的话题，从想写点什么开始到现在， 已经半年过去了。</p>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <h1>
+                        <a id="logo" href="https://1huizui.cn/">
+                            一回醉居
+                        </a>
+                    </h1>
+                
+                <p class="description">闲来无事, 记点事情</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://1huizui.cn/">首页</a>
+                    
+                    <a  href="https://1huizui.cn/categories/" title="分类">分类</a>
+                    
+                    <a  href="https://1huizui.cn/tags/" title="标签">标签</a>
+                    
+                    <a  href="https://1huizui.cn/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/" title="Golang 培训计划(02): 你好, 认识一下?" >Golang 培训计划(02): 你好, 认识一下?</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年8月24日
+                            </date>
+                            
+                            <div class="post-content">
+                                ……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/golang/learning-golang/00.%E5%89%8D%E8%A8%80/" title="Golang 培训计划(01):前言" >Golang 培训计划(01):前言</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年8月24日
+                            </date>
+                            
+                            <div class="post-content">
+                                <p>最近我司计划组织一次 <code>golang</code> 的培训, 所以将内容整理出来, 以供参考.</p>
+
+<p>内容大都参考过 <strong><a href="https://item.jd.com/11668493.html">七周七并发模型</a></strong> 及 <strong><a href="https://books.studygolang.com/gopl-zh/">Go 语言圣经</a></strong>, 感谢作者们的奉献.</p>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/golang/learning-golang/00.%E5%89%8D%E8%A8%80/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/article/about_mid_adult_man/" title="中年男人的隐忍" >中年男人的隐忍</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年8月24日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E5%B0%8F%E8%AE%B0">小记</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                <p>　　有点沉重的话题，从想写点什么开始到现在， 已经半年过去了。</p>
 
 <p>　　已经想不起来当初为什么会写这个标题了，似乎是几个人一起去喝酒，喝到后面，谈到工作、家庭、父母、故乡，有人说到夫妻关系，有人说职场关系，有人说到学区房，有人说到婆媳关系，到最后终于都说不下去了，只能相顾无言，意兴阑珊。</p>
 
-<p>　　大伙儿都很累，但没想到，都是这般累。</p>
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/code/linux/linuxbashtools/">Linux 命令行工具</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>20 Aug 2019, 01:08</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/ops">ops</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.</p>
+<p>　　大伙儿都很累，但没想到，都是这般累。</p>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/article/about_mid_adult_man/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/linux/linuxbashtools/" title="Linux 命令行工具" >Linux 命令行工具</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年8月20日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB">码夫</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                <p>最近经常向人推荐一些小工具, 发现自己对自己手头上的工具并没有很好的整理, 因此, 简单记一下目前用到的工具及其下载链接.</p>
 
 <h2 id="自动跳转-z-sh">自动跳转 z.sh</h2>
 
@@ -368,254 +154,143 @@
 
 <blockquote>
 <p><a href="https://github.com/rupa/z">https://github.com/rupa/z</a></p>
-</blockquote>
-  </p>
-
-  
-  <footer>
-    <a href="/post/code/linux/linuxbashtools/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/golang/using-go-module/">使用 Go Module 来组织代码</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>29 Apr 2019, 10:43</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/go">go</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>最近一段时间, 研究了下 <code>Go Module</code> .</p>
+</blockquote>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/code/linux/linuxbashtools/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/golang/using-go-module/" title="使用 Go Module 来组织代码" >使用 Go Module 来组织代码</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年4月29日
+                            </date>
+                            
+                            <div class="post-content">
+                                <p>最近一段时间, 研究了下 <code>Go Module</code> .</p>
 
 <p>从 <code>Go 1.11</code> 开始, GoLang 开始支持 <code>module</code> 的功能.</p>
 
 <blockquote>
 <p><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></p>
-</blockquote>
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/golang/gopls/">使用 Gopls 代码提示</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>29 Apr 2019, 10:43</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/go">go</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>VSCode 使用 language server 进行代码提示.</p>
+</blockquote>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/golang/using-go-module/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/golang/gopls/" title="使用 Gopls 代码提示" >使用 Gopls 代码提示</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年4月29日
+                            </date>
+                            
+                            <div class="post-content">
+                                <p>VSCode 使用 language server 进行代码提示.</p>
 
 <p>代码地址:</p>
 
 <blockquote>
 <p><a href="https://github.com/saibing/tools">https://github.com/saibing/tools</a></p>
-</blockquote>
-  </p>
-
-  
-  <footer>
-    <a href="/post/golang/gopls/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/article/back_to_work_2019/">夜深人静, 听&lt;不一定&gt;</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>06 Mar 2019, 01:22</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>说什么好呢，该说什么好呢？
-刚回到工作中，发现自己又开始了晚上睡不着的日子。躺在床上，打开播放器，耳畔响起的是彭佳慧的&lt;不一定&gt;。有点惊喜，有点惆怅，有些怀念，有些疲倦，像是许久不见的好友，默默听了许久，还是不记得这首歌是什么时候加入的播放列表。</p>
-  </p>
-
-  
-  <footer>
-    <a href="/post/article/back_to_work_2019/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/golang/fuckgfw/">go get 翻墙</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>20 Dec 2018, 14:41</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/go">go</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/gin">gin</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <p>go get 时, 会发送一个 https 请求, 此时 设置的 git 的 socks5 代理无效</p>
+</blockquote>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/golang/gopls/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/article/back_to_work_2019/" title="夜深人静, 听&lt;不一定&gt;" >夜深人静, 听&lt;不一定&gt;</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年3月6日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E5%B0%8F%E8%AE%B0">小记</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                <p>说什么好呢，该说什么好呢？
+刚回到工作中，发现自己又开始了晚上睡不着的日子。躺在床上，打开播放器，耳畔响起的是彭佳慧的&lt;不一定&gt;。有点惊喜，有点惆怅，有些怀念，有些疲倦，像是许久不见的好友，默默听了许久，还是不记得这首歌是什么时候加入的播放列表。</p>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/article/back_to_work_2019/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/golang/fuckgfw/" title="go get 翻墙" >go get 翻墙</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2018年12月20日
+                            </date>
+                            
+                            <div class="post-content">
+                                <p>go get 时, 会发送一个 https 请求, 此时 设置的 git 的 socks5 代理无效</p>
 
 <p>解决方案:</p>
 
 <pre><code class="language-bash">https_proxy=127.0.0.1:7777 go get -u -v xxxx
-</code></pre>
-  </p>
-
-  
-  <footer>
-    <a href="/post/golang/fuckgfw/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">Redis的数据结构与对象(4): 压缩列表</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>11 Jun 2018, 22:15</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  压缩列表(ziplist) 压缩列表（ziplist）是列表(list)键和哈希(hash table)键的底层实现之一. 当一个列表键只包含少量列表项, 并且每个列表项要么就是小整数值, 要么就是长度比较短的字符串, 那么Redis就会使用压缩列表来做列表键的底层实现.
-未完待续..
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/">Redis的数据结构与对象(3): 跳跃表及整数集合</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>09 Jun 2018, 13:24</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  <h1 id="跳跃表">跳跃表</h1>
+</code></pre>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/golang/fuckgfw/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表" >Redis的数据结构与对象(4): 压缩列表</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2018年6月11日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">Redis的设计与实现</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                压缩列表(ziplist) 压缩列表（ziplist）是列表(list)键和哈希(hash table)键的底层实现之一. 当一个列表键只包含少量列表项, 并且每个列表项要么就是小整数值, 要么就是长度比较短的字符串, 那么Redis就会使用压缩列表来做列表键的底层实现.
+未完待续..……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/" title="Redis的数据结构与对象(3): 跳跃表及整数集合" >Redis的数据结构与对象(3): 跳跃表及整数集合</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2018年6月9日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">Redis的设计与实现</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                <h1 id="跳跃表">跳跃表</h1>
 
 <p>Redis使用跳跃表作为有序集合键的底层实现之一,  如果一个有序集合包含的元素比较多, 或者有序集合中的元素是比较长的字符串时, Redis会使用跳跃表来作为有序集合的底层实现.</p>
 
@@ -625,50 +300,196 @@
 <p><a href="http://blog.jobbole.com/111731/">漫画算法：什么是跳跃表？</a></p>
 </blockquote>
 
-<p>在大部分情况下, 跳跃表的效率可以和平衡树相媲美, 并且因为跳跃表的实现比平衡树要来得更为简单, 所以有不少程序都使用跳跃表来代替平衡树.</p>
-  </p>
-
-  
-  <footer>
-    <a href="/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-
-  
-
-
-<nav class="pagination" role="pagination">
-  
-  <i class="fa fa-chevron-left"></i>
-  
-  <span>&nbsp;1 / 3&nbsp;</span>
-  
-  <a href="/page/2/"><i class="fa fa-chevron-right"></i></a>
-  
-</nav>
+<p>在大部分情况下, 跳跃表的效率可以和平衡树相媲美, 并且因为跳跃表的实现比平衡树要来得更为简单, 所以有不少程序都使用跳跃表来代替平衡树.</p>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/">阅读全文</a></p>
+                        </article>
+                    
+                    
 
 
 
+<ol class="page-navigator">
+    
+
+    
+    <li  class="current">
+        <a href="https://1huizui.cn/">1</a>
+    </li>
+    
+    <li >
+        <a href="https://1huizui.cn/page/2/">2</a>
+    </li>
+    
+    <li >
+        <a href="https://1huizui.cn/page/3/">3</a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://1huizui.cn/page/2/">下一页</a>
+    </li>
+    
+</ol>
+
+
+
+                </div>
+            </div>
+
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://1huizui.cn/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/" title="Golang 培训计划(02): 你好, 认识一下?">Golang 培训计划(02): 你好, 认识一下?</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/golang/learning-golang/00.%E5%89%8D%E8%A8%80/" title="Golang 培训计划(01):前言">Golang 培训计划(01):前言</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/article/about_mid_adult_man/" title="中年男人的隐忍">中年男人的隐忍</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/code/linux/linuxbashtools/" title="Linux 命令行工具">Linux 命令行工具</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/golang/using-go-module/" title="使用 Go Module 来组织代码">使用 Go Module 来组织代码</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/golang/gopls/" title="使用 Gopls 代码提示">使用 Gopls 代码提示</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/article/back_to_work_2019/" title="夜深人静, 听&lt;不一定&gt;">夜深人静, 听&lt;不一定&gt;</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/golang/fuckgfw/" title="go get 翻墙">go get 翻墙</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表">Redis的数据结构与对象(4): 压缩列表</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/" title="Redis的数据结构与对象(3): 跳跃表及整数集合">Redis的数据结构与对象(3): 跳跃表及整数集合</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/">redis的设与实现(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/">redis的设计与实现(3)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/%E5%AD%A6%E4%B9%A0/">学习(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/%E5%B0%8F%E8%AE%B0/">小记(4)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(7)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/">网络(2)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://1huizui.cn/tags/bbr/">bbr</a>
+    
+    <a href="https://1huizui.cn/tags/coding/">coding</a>
+    
+    <a href="https://1huizui.cn/tags/english/">english</a>
+    
+    <a href="https://1huizui.cn/tags/gin/">gin</a>
+    
+    <a href="https://1huizui.cn/tags/go/">go</a>
+    
+    <a href="https://1huizui.cn/tags/golang/">golang</a>
+    
+    <a href="https://1huizui.cn/tags/laravel/">laravel</a>
+    
+    <a href="https://1huizui.cn/tags/linux/">linux</a>
+    
+    <a href="https://1huizui.cn/tags/net/">net</a>
+    
+    <a href="https://1huizui.cn/tags/ops/">ops</a>
+    
+    <a href="https://1huizui.cn/tags/php/">php</a>
+    
+    <a href="https://1huizui.cn/tags/ss/">ss</a>
+    
+    <a href="https://1huizui.cn/tags/study/">study</a>
+    
+    <a href="https://1huizui.cn/tags/vue/">vue</a>
+    
 </div>
+    </section>
 
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://1huizui.cn/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
 </div>
+        </div>
+    </div>
 </div>
-<script src="https://1huizui.cn/js/ui.js"></script>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="https://1huizui.cn/">一回醉居 By 骑马爬树</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'Your Google Analytics tracking ID', 'auto');
-  ga('send', 'pageview');
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
 
-</script>
+
 
 
 
@@ -676,4 +497,3 @@
 
 </body>
 </html>
-
