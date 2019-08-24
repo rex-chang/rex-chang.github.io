@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu.css">
+  <link rel="stylesheet" href="/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/blackburn.css">
+  <link rel="stylesheet" href="/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,13 +42,8 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
-  <link rel="shortcut icon" href="https://rex-chang.github.io/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://1huizui.cn/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -67,7 +62,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://rex-chang.github.io/">骑马爬树</a>
+  <a class="pure-menu-heading brand" href="/">骑马爬树</a>
 
 
   <div class="pure-menu">
@@ -75,31 +70,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/"><i class='fa fa-home fa-fw'></i>首页</a>
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/post/"><i class='fa fa-list fa-fw'></i>文章</a>
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/about/"><i class='fa fa-user fa-fw'></i>关于</a>
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>关于</a>
       
         </li>
       
@@ -195,7 +178,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small></small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" style="font-weight: bold" target="_blank">Hugo</a></small><br/>
@@ -234,9 +217,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/net">net</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/net">net</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://rex-chang.github.io/tags/linux">linux</a>
+      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/linux">linux</a>
     
   </div>
   
@@ -250,11 +233,11 @@
 <p>本文参考了 <a href="https://www.cnblogs.com/kwongtai/p/6903420.html">https://www.cnblogs.com/kwongtai/p/6903420.html</a></p>
 </blockquote>
 
-<p>使用到的ssh参数:<br />
-反向代理:<br />
-<code>ssh -fcNR</code><br />
-正向代理:<br />
-<code>ssh -fcNL</code><br />
+<p>使用到的ssh参数:
+反向代理:
+<code>ssh -fcNR</code>
+正向代理:
+<code>ssh -fcNL</code>
 参数说明:</p>
 
 <pre><code class="language-bash">
@@ -320,7 +303,7 @@
 <pre><code class="language-bash">ssh -fCNR [机器A的IP或省略]:[A机器端口]:[B机器的IP]:[B机器端口] [登陆B机器的用户名@B机器的IP] -p [B机Port]
 </code></pre>
 
-<p>如使用B机器的7280端口，以及A机器的22端口，按照上面的指令就是这样子的操作<br />
+<p>如使用B机器的7280端口，以及A机器的22端口，按照上面的指令就是这样子的操作
 <code>ssh -fCNR 7280:localhost:22 root@123.123.123.123</code></p>
 
 <p>由于ssh会因断网/超时等原因断开,因此更好的做法是使用<code>autossh</code></p>
@@ -338,13 +321,13 @@ autossh -M 7281 -fCNR 7280:localhost:22 root@123.123.123.123
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://1huizui.cn/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://rex-chang.github.io/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/">英语学习笔记001</a>
+      <a href="https://1huizui.cn/post/eng/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0001/">英语学习笔记001</a>
     </nav>
     
   </div>
@@ -354,13 +337,13 @@ autossh -M 7281 -fCNR 7280:localhost:22 root@123.123.123.123
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/">搭建Vue&#43;ElementUI的框架</a>
+      <a href="https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/">搭建Vue&#43;ElementUI的框架</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://rex-chang.github.io/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://1huizui.cn/post/code/vue/1.%E6%90%AD%E5%BB%BAvue&#43;element-ui/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -368,30 +351,12 @@ autossh -M 7281 -fCNR 7280:localhost:22 root@123.123.123.123
 
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'Your Disqus shortname';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 
 </div>
 
 </div>
 </div>
-<script src="https://rex-chang.github.io/js/ui.js"></script>
+<script src="https://1huizui.cn/js/ui.js"></script>
 
 
 <script>

@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu.css">
+  <link rel="stylesheet" href="/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/blackburn.css">
+  <link rel="stylesheet" href="/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,13 +42,8 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
-  <link rel="shortcut icon" href="https://rex-chang.github.io/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://1huizui.cn/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -67,7 +62,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://rex-chang.github.io/">骑马爬树</a>
+  <a class="pure-menu-heading brand" href="/">骑马爬树</a>
 
 
   <div class="pure-menu">
@@ -75,31 +70,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/"><i class='fa fa-home fa-fw'></i>首页</a>
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/post/"><i class='fa fa-list fa-fw'></i>文章</a>
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/about/"><i class='fa fa-user fa-fw'></i>关于</a>
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>关于</a>
       
         </li>
       
@@ -195,7 +178,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small></small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" style="font-weight: bold" target="_blank">Hugo</a></small><br/>
@@ -232,12 +215,12 @@
 
 </div>
 
-  <p>[Redis设计与实现] 的读书笔记.<br />
+  <p>[Redis设计与实现] 的读书笔记.
 手头的书籍略老,是基于<code>Redis2.9</code>, 阅读时参照 <code>Redis4.0.9</code>进行了相应的修改.</p>
 
 <h1 id="简单动态字符串">简单动态字符串</h1>
 
-<p><code>Red</code>没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.<br />
+<p><code>Red</code>没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.
 C字符串只会作为字符串字面量用在一些无需对字符串进行修改的地方,比如用于打印日志:</p>
 
 <pre><code class="language-c">    redisLog(REDIS_WARNING, &quot;Redis is now ready to exit, good bye...&quot;);
@@ -289,11 +272,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
 <h1 id="sds与传统字符串的区别">SDS与传统字符串的区别</h1>
 
 <ol>
-<li>常数复杂度获取字符串长度<br /></li>
-<li>杜绝了缓冲区溢出<br /></li>
-<li>减少修改字符串时带来的内存重分配次数<br /></li>
-<li>二进制安全<br />
-<br /></li>
+<li>常数复杂度获取字符串长度</li>
+<li>杜绝了缓冲区溢出</li>
+<li>减少修改字符串时带来的内存重分配次数</li>
+<li>二进制安全</li>
 </ol>
 
 <h1 id="主要操作api">主要操作API</h1>
@@ -355,13 +337,13 @@ void sds_free(void *ptr);
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://rex-chang.github.io/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://rex-chang.github.io/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/">Pip跳过已安装的包</a>
+      <a href="https://1huizui.cn/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/">Pip跳过已安装的包</a>
     </nav>
     
   </div>
@@ -371,13 +353,13 @@ void sds_free(void *ptr);
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a>
+      <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -385,30 +367,12 @@ void sds_free(void *ptr);
 
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'Your Disqus shortname';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 
 </div>
 
 </div>
 </div>
-<script src="https://rex-chang.github.io/js/ui.js"></script>
+<script src="https://1huizui.cn/js/ui.js"></script>
 
 
 <script>

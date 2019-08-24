@@ -2,13 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on 一回醉居</title>
-    <link>https://rex-chang.github.io/topics/</link>
+    <link>https://1huizui.cn/topics/</link>
     <description>Recent content in Topics on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     
-	<atom:link href="https://rex-chang.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

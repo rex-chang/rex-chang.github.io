@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="专注于IT互联网，包括但不限于Go语言(golang)、Java、Android、Python、项目管理、抖音分析、软件架构等">
   <meta name="generator" content="Hugo 0.55.6" />
 
   <title>Redis的设与实现 &middot; 一回醉居</title>
@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu.css">
+  <link rel="stylesheet" href="/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/blackburn.css">
+  <link rel="stylesheet" href="/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,17 +40,12 @@
 
  
   
-  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="一回醉居" href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" />
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
-  <link rel="shortcut icon" href="https://rex-chang.github.io/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://1huizui.cn/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -69,7 +64,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://rex-chang.github.io/">骑马爬树</a>
+  <a class="pure-menu-heading brand" href="/">骑马爬树</a>
 
 
   <div class="pure-menu">
@@ -77,31 +72,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/"><i class='fa fa-home fa-fw'></i>首页</a>
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/post/"><i class='fa fa-list fa-fw'></i>文章</a>
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/about/"><i class='fa fa-user fa-fw'></i>关于</a>
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>关于</a>
       
         </li>
       
@@ -113,7 +96,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     
 
@@ -201,7 +184,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small></small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" style="font-weight: bold" target="_blank">Hugo</a></small><br/>
@@ -224,7 +207,7 @@
 <div class="content">
      <article>
   <header>
-    <h2><a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Redis的数据结构与对象(1): 字符串</a></h2>
+    <h2><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Redis的数据结构与对象(1): 字符串</a></h2>
 
     <div class="post-meta">
 
@@ -244,12 +227,12 @@
   </header>
 
   <p>
-  <p>[Redis设计与实现] 的读书笔记.<br />
+  <p>[Redis设计与实现] 的读书笔记.
 手头的书籍略老,是基于<code>Redis2.9</code>, 阅读时参照 <code>Redis4.0.9</code>进行了相应的修改.</p>
 
 <h1 id="简单动态字符串">简单动态字符串</h1>
 
-<p><code>Red</code>没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.<br />
+<p><code>Red</code>没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.
 C字符串只会作为字符串字面量用在一些无需对字符串进行修改的地方,比如用于打印日志:</p>
 
 <pre><code class="language-c">    redisLog(REDIS_WARNING, &quot;Redis is now ready to exit, good bye...&quot;);
@@ -258,7 +241,7 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
 
   
   <footer>
-    <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
@@ -267,7 +250,7 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
 
 </div>
 </div>
-<script src="https://rex-chang.github.io/js/ui.js"></script>
+<script src="https://1huizui.cn/js/ui.js"></script>
 
 
 <script>

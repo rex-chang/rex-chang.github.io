@@ -2,28 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redis的设与实现 on 一回醉居</title>
-    <link>https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <link>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
     <description>Recent content in Redis的设与实现 on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Sat, 26 May 2018 09:57:23 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Redis的数据结构与对象(1): 字符串</title>
-      <link>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</link>
+      <link>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</link>
       <pubDate>Sat, 26 May 2018 09:57:23 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</guid>
-      <description>&lt;p&gt;[Redis设计与实现] 的读书笔记.&lt;br /&gt;
+      <guid>https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/</guid>
+      <description>&lt;p&gt;[Redis设计与实现] 的读书笔记.
 手头的书籍略老,是基于&lt;code&gt;Redis2.9&lt;/code&gt;, 阅读时参照 &lt;code&gt;Redis4.0.9&lt;/code&gt;进行了相应的修改.&lt;/p&gt;
 
 &lt;h1 id=&#34;简单动态字符串&#34;&gt;简单动态字符串&lt;/h1&gt;
 
-&lt;p&gt;&lt;code&gt;Red&lt;/code&gt;没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.&lt;br /&gt;
+&lt;p&gt;&lt;code&gt;Red&lt;/code&gt;没有使用C语言传统的字符串表示, 而是自己设计了了一种简单动态字符串(Simple dynamic string, SDS)的抽象类型.
 C字符串只会作为字符串字面量用在一些无需对字符串进行修改的地方,比如用于打印日志:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;    redisLog(REDIS_WARNING, &amp;quot;Redis is now ready to exit, good bye...&amp;quot;);

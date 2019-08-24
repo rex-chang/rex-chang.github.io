@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/side-menu.css">
+  <link rel="stylesheet" href="/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="https://rex-chang.github.io/css/blackburn.css">
+  <link rel="stylesheet" href="/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,13 +42,8 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
-  <link rel="shortcut icon" href="https://rex-chang.github.io/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://1huizui.cn/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -67,7 +62,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://rex-chang.github.io/">骑马爬树</a>
+  <a class="pure-menu-heading brand" href="/">骑马爬树</a>
 
 
   <div class="pure-menu">
@@ -75,31 +70,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/"><i class='fa fa-home fa-fw'></i>首页</a>
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/post/"><i class='fa fa-list fa-fw'></i>文章</a>
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://rex-chang.github.io/about/"><i class='fa fa-user fa-fw'></i>关于</a>
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>关于</a>
       
         </li>
       
@@ -195,7 +178,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small></small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" style="font-weight: bold" target="_blank">Hugo</a></small><br/>
@@ -270,14 +253,13 @@ typedef struct zskiplist { //跳跃表
 <p>在同一个跳跃表中, 各个节点保存的成员对象必须是唯一的, 但是多个节点保存的分值却可以是相同的: 分值相同的节点将按照成员对象在字典序中的大小来进行排序, 成员对象较小的节点会排在前面（靠近表头的方向）, 而成员对象较大的节点则会排在后面（靠近表尾的方向）.</p>
 
 <ul>
-<li>每个跳跃表节点的层高都是1至32之间的随机数.<br /></li>
-<li>跳跃表中的节点按照分值大小进行排序，当分值相同时，节点按照成员对象的大小进行排序.<br />
-<br /></li>
+<li>每个跳跃表节点的层高都是1至32之间的随机数.</li>
+<li>跳跃表中的节点按照分值大小进行排序，当分值相同时，节点按照成员对象的大小进行排序.</li>
 </ul>
 
 <h1 id="整数集合">整数集合</h1>
 
-<p>整数集合(intset)是集合键的底层实现之一, 当一个集合只包含整数值元素, 并且这个集合的元素数量不多时, Redis就会使用整数集合作为集合键的底层实现.<br />
+<p>整数集合(intset)是集合键的底层实现之一, 当一个集合只包含整数值元素, 并且这个集合的元素数量不多时, Redis就会使用整数集合作为集合键的底层实现.
 例如, 我们创建了一个只包含五个元素的集合键, 那么这个集合键的底层实现就是整数集合:</p>
 
 <pre><code class="language-bash">redis&gt; SADD numbers 1 3 5 7 9
@@ -345,20 +327,20 @@ static uint8_t _intsetValueEncoding(int64_t v) {
 
 <h2 id="关于升级">关于升级</h2>
 
-<p>升级的最主要目的在于节约内存.<br />
+<p>升级的最主要目的在于节约内存.
 例如，如果我们一直只向整数集合添加int16_t类型的值，那么整数集合的底层实现就会一直是int16_t类型的数组，只有在我们要将int32_t类型或者int64_t类型的值添加到集合时，程序才会对数组进行升级</p>
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a>
+      <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a>
     </nav>
     
   </div>
@@ -368,13 +350,13 @@ static uint8_t _intsetValueEncoding(int64_t v) {
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">Redis的数据结构与对象(4): 压缩列表</a>
+      <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">Redis的数据结构与对象(4): 压缩列表</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://rex-chang.github.io/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -382,30 +364,12 @@ static uint8_t _intsetValueEncoding(int64_t v) {
 
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'Your Disqus shortname';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 
 </div>
 
 </div>
 </div>
-<script src="https://rex-chang.github.io/js/ui.js"></script>
+<script src="https://1huizui.cn/js/ui.js"></script>
 
 
 <script>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <title>Golang 培训计划(01):前言 &middot; 一回醉居</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+
+  <link rel="shortcut icon" href="https://1huizui.cn/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">骑马爬树</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-list fa-fw'></i>分类</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-list fa-fw'></i>标签</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>关于</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+     
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/rex-chang" target="_blank">
+        <i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" style="font-weight: bold" target="_blank">Hugo</a></small><br/>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" style="font-weight: bold" target="_blank">Blackburn</a></small><br/>
+    <small>Hosted by&nbsp;<a href="https://pages.coding.me" style="font-weight: bold" target="_blank">Coding Pages</a></small>
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Golang 培训计划(01):前言</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>24 Aug 2019, 14:41</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/golang">golang</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://1huizui.cn/tags/go">go</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>最近我司计划组织一次 <code>golang</code> 的培训, 所以将内容整理出来, 以供参考.</p>
+
+<p>内容大都参考过 <strong><a href="https://item.jd.com/11668493.html">七周七并发模型</a></strong> 及 <strong><a href="https://books.studygolang.com/gopl-zh/">Go 语言圣经</a></strong>, 感谢作者们的奉献.</p>
+
+<h2 id="并发还是并行">并发还是并行?</h2>
+
+<p>并发无处不在</p>
+
+<h3 id="串行">串行</h3>
+
+<p>我们经常写这样子的代码:</p>
+
+<pre><code>http_request();
+do_sth();
+http_request();
+do_sth2();   
+</code></pre>
+
+<p>代码顺序执行, 不会错, 不会乱.</p>
+
+<h3 id="并发还是并行-1">并发还是并行?</h3>
+
+<p>引用 Rob Pike 的经典描述:</p>
+
+<blockquote>
+<p>并发是同一时间应对(dealing with)多件事情的能力</p>
+
+<p>并行是同一时间动手做(doing)多件事情的能力.</p>
+</blockquote>
+
+<p><strong>举个栗子?</strong></p>
+
+<blockquote>
+<p>你吃饭吃到一半，电话来了，你一直到吃完了以后才去接，这就说明你不支持并发也不支持并行。</p>
+
+<p>你吃饭吃到一半，电话来了，你停了下来接了电话，接完后继续吃饭，这说明你支持并发。（不一定是同时的）</p>
+
+<p>你吃饭吃到一半，电话来了，你一边打电话一边吃饭，这说明你支持并行。  </p>
+</blockquote>
+
+<p>并发的关键是你有处理多个任务的能力，不一定要<strong>同时</strong>。  </p>
+
+<p>并行的关键是你有<strong>同时</strong>处理多个任务的能力。  </p>
+
+<h4 id="并行架构">并行架构</h4>
+
+<ul>
+<li>位级并行</li>
+</ul>
+
+<p>如果需要进行两个 32 位数的相加减, 8位的计算机需要进行多次 8 位的加减, 而 32 位的, 则可以一步完成.</p>
+
+<pre><code>8位机器: 任天堂(小霸王),
+
+16位机器: 80286
+
+32位机器: 80386 起
+
+64位机器: 安腾, AMD 的 Athlon 7
+</code></pre>
+
+<ul>
+<li><p>指令级并行</p>
+
+<p>现代 CPU 的并行度很高, 其中使用的技术包括流水线, 乱序执行和猜测执行(动态分支预测)等.</p>
+
+<p>处理器内指令并行程度很高, 但是经过精心设计, 从外部看上去, 所有的处理都像是串行的.</p></li>
+
+<li><p>数据级并行</p>
+
+<p>常见的 SIMD(单指令多数据)/SIMT(单指令多线程, 多用于显卡), 可以并行地在大量数据上施加同一操作. 在特定场景下可以发挥巨大的作用, 比如说图像渲染, 深度学习也会用到.</p></li>
+
+<li><p>任务级并行</p>
+
+<p>多处理器并行, 从我们的角度来看, 多处理器架构最明显的分类特征是其内存模型(共享内存或者分布式内存)</p></li>
+</ul>
+
+<h4 id="并发">并发</h4>
+
+<p>使用并发的目的, 不仅仅是让程序并行运行并发挥多核的优势, 若正确使用并发, 程序还将获取以下优点: 及时响应, 高效, 容错, 简单.</p>
+
+<h4 id="并发场景">并发场景</h4>
+
+<p>在我们的系统里面, 经常出现的并发场景</p>
+
+<h5 id="并发读">并发读</h5>
+
+<p>接口调用, 多数情况下在<code>任务级并发</code>的情况下可以应对, 我们常见的优化手段: 加机器, 加缓存, 优化调用链路. 惟快不破.</p>
+
+<h5 id="并发写">并发写</h5>
+
+<p>主要存在于学习系统学生提交做题答案, 消息队列的生产和消费.</p>
+
+<p>对应的解决方案:</p>
+
+<ol>
+<li><p>一写多读, 保证数据的最终一致性</p></li>
+
+<li><p>对于不需要累加的数据, 使用计数器, 来保证旧的数据不会覆盖新的</p></li>
+</ol>
+
+<h4 id="常见的并发模块">常见的并发模块</h4>
+
+<ol>
+<li>线程与锁:</li>
+<li>Clojure之道&ndash;分离标识和状态</li>
+<li>Actor: 应用广泛, 适用于共享内存行和分布式内存型模块, 能提供强大的容错性</li>
+<li>CPS(通信顺序进行): 和 <code>Actor</code> 很相似, 都是基于消息传递, 但<code>CSP</code>侧重于消息传递的通道, <code>Actor</code> 则更侧重于消息两端的实体.</li>
+<li>数据级并行(GPU), 图像/视频的 <code>GPU</code> 加速.</li>
+<li>Lambad 架构: 一种可以处理多种大数据问题的架构, 综合了 <code>MapReduce</code> 和流式处理的特点.</li>
+</ol>
+
+<h3 id="扩展资料">扩展资料</h3>
+
+<p><a href="https://www.infoq.cn/article/atomic-operation">CPU原子集指令</a></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://1huizui.cn/post/article/about_mid_adult_man/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://1huizui.cn/post/article/about_mid_adult_man/">中年男人的隐忍</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/">Golang 培训计划(02): 你好, 认识一下?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://1huizui.cn/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+</body>
+</html>
+

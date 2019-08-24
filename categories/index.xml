@@ -2,67 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 一回醉居</title>
-    <link>https://rex-chang.github.io/categories/</link>
+    <link>https://1huizui.cn/categories/</link>
     <description>Recent content in Categories on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 20 Aug 2019 01:08:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2019 01:22:14 +0800</lastBuildDate>
     
-	<atom:link href="https://rex-chang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://1huizui.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>码夫</title>
-      <link>https://rex-chang.github.io/categories/%E7%A0%81%E5%A4%AB/</link>
-      <pubDate>Tue, 20 Aug 2019 01:08:15 +0800</pubDate>
+      <title>小记</title>
+      <link>https://1huizui.cn/categories/%E5%B0%8F%E8%AE%B0/</link>
+      <pubDate>Sat, 24 Aug 2019 01:22:14 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/categories/%E7%A0%81%E5%A4%AB/</guid>
+      <guid>https://1huizui.cn/categories/%E5%B0%8F%E8%AE%B0/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>小记</title>
-      <link>https://rex-chang.github.io/categories/%E5%B0%8F%E8%AE%B0/</link>
-      <pubDate>Wed, 06 Mar 2019 01:22:14 +0800</pubDate>
+      <title>码夫</title>
+      <link>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</link>
+      <pubDate>Tue, 20 Aug 2019 01:08:15 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/categories/%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Redis的设计与实现</title>
-      <link>https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Mon, 11 Jun 2018 22:15:44 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Redis的设与实现</title>
-      <link>https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sat, 26 May 2018 09:57:23 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>网络</title>
-      <link>https://rex-chang.github.io/categories/%E7%BD%91%E7%BB%9C/</link>
+      <link>https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Thu, 17 May 2018 11:12:12 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/categories/%E7%BD%91%E7%BB%9C/</guid>
+      <guid>https://1huizui.cn/categories/%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>学习</title>
-      <link>https://rex-chang.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://1huizui.cn/categories/%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sat, 12 May 2018 21:04:29 +0800</pubDate>
       
-      <guid>https://rex-chang.github.io/categories/%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://1huizui.cn/categories/%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
     
