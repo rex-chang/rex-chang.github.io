@@ -6,10 +6,20 @@
     <description>Recent content on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Aug 2019 22:41:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 01:08:15 +0900</lastBuildDate>
     
 	<atom:link href="https://1huizui.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CURL-ES 指令收集</title>
+      <link>https://1huizui.cn/post/code/db/curl-es/</link>
+      <pubDate>Thu, 28 Nov 2019 01:08:15 +0900</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/db/curl-es/</guid>
+      <description>收集波 curl 操作 es 的代码
+#查看es基本信息 curl localhost:9200 #列出所有的Index curl -X GET &#39;http://localhost:9200/_cat/indices?v&#39; #列举每个Index下的Type curl &#39;localhost:9200/_mapping?pretty=true&#39; #添加Index curl -X PUT &#39;localhost:9200/weather&#39; #删除Index curl -X DELETE &#39;localhost:9200/weather&#39; #安装中文分词插件ik （安装完需要重启es） elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.5.4/elasticsearch-analysis-ik-6.5.4.zip #创建一个Index，并设置其结构和分词 curl -X PUT -H &#39;Content-Type: application/json&#39; &#39;localhost:9200/accounts&#39; -d &#39; { &amp;quot;mappings&amp;quot;: { &amp;quot;person&amp;quot;: { &amp;quot;properties&amp;quot;: { &amp;quot;user&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;text&amp;quot;, &amp;quot;analyzer&amp;quot;: &amp;quot;ik_max_word&amp;quot;, &amp;quot;search_analyzer&amp;quot;: &amp;quot;ik_max_word&amp;quot; }, &amp;quot;title&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;text&amp;quot;, &amp;quot;analyzer&amp;quot;: &amp;quot;ik_max_word&amp;quot;, &amp;quot;search_analyzer&amp;quot;: &amp;quot;ik_max_word&amp;quot; } } } } }&#39; #向Index增加记录 #PUT方式 curl -X PUT -H &#39;Content-Type: application/json&#39; &#39;localhost:9200/accounts/person/1&#39; -d &#39; { &amp;quot;user&amp;quot;: &amp;quot;张三&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;工程师&amp;quot; }&#39; #POST方式（POST方式不需要传id，id随机生成） #curl -X POST -H &#39;Content-Type: application/json&#39; &#39;localhost:9200/accounts/person&#39; -d &#39; { &amp;quot;user&amp;quot;: &amp;quot;李四&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;工程师&amp;quot; } #注意：如果没有先创建 Index（这个例子是accounts），直接执行上面的命令，Elastic 也不会报错，而是直接生成指定的 Index。所以，打字的时候要小心，不要写错 Index 的名称。 #查看指定条目的记录 curl &#39;localhost:9200/accounts/person/1?</description>
+    </item>
     
     <item>
       <title>Golang 培训计划(02): 你好, 认识一下?</title>

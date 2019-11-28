@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 一回醉居</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Aug 2019 22:41:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 01:08:15 +0900</lastBuildDate>
     
 	<atom:link href="https://1huizui.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ops</title>
+      <link>https://1huizui.cn/tags/ops/</link>
+      <pubDate>Thu, 28 Nov 2019 01:08:15 +0900</pubDate>
+      
+      <guid>https://1huizui.cn/tags/ops/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>go</title>
@@ -26,15 +35,6 @@
       <pubDate>Sat, 24 Aug 2019 22:41:28 +0800</pubDate>
       
       <guid>https://1huizui.cn/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ops</title>
-      <link>https://1huizui.cn/tags/ops/</link>
-      <pubDate>Tue, 20 Aug 2019 01:08:15 +0800</pubDate>
-      
-      <guid>https://1huizui.cn/tags/ops/</guid>
       <description></description>
     </item>
     

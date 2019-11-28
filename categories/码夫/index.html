@@ -76,6 +76,30 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/db/curl-es/">CURL-ES 指令收集</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年11月28日
+                            </date>
+                            
+                            <div class="post-meta meta-category">
+                                |
+                                
+                                    <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB">码夫</a>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                收集波 curl 操作 es 的代码
+#查看es基本信息 curl localhost:9200 #列出所有的Index curl -X GET 'http://localhost:9200/_cat/indices?v' #列举每个Index下的Type curl 'localhost:9200/_mapping?pretty=true' #添加Index curl -X PUT 'localhost:9200/weather' #删除Index curl -X DELETE 'localhost:9200/weather' #安装中文分词插件ik （安装完需要重启es） elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.5.4/elasticsearch-analysis-ik-6.5.4.zip #创建一个Index，并设置其结构和分词 curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts' -d ' { &quot;mappings&quot;: { &quot;person&quot;: { &quot;properties&quot;: { &quot;user&quot;: { &quot;type&quot;: &quot;text&quot;, &quot;analyzer&quot;: &quot;ik_max_word&quot;, &quot;search_analyzer&quot;: &quot;ik_max_word&quot; }, &quot;title&quot;: { &quot;type&quot;: &quot;text&quot;, &quot;analyzer&quot;: &quot;ik_max_word&quot;, &quot;search_analyzer&quot;: &quot;ik_max_word&quot; } } } } }' #向Index增加记录 #PUT方式 curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts/person/1' -d ' { &quot;user&quot;: &quot;张三&quot;, &quot;title&quot;: &quot;工程师&quot; }' #POST方式（POST方式不需要传id，id随机生成） #curl -X POST -H 'Content-Type: application/json' 'localhost:9200/accounts/person' -d ' { &quot;user&quot;: &quot;李四&quot;, &quot;title&quot;: &quot;工程师&quot; } #注意：如果没有先创建 Index（这个例子是accounts），直接执行上面的命令，Elastic 也不会报错，而是直接生成指定的 Index。所以，打字的时候要小心，不要写错 Index 的名称。 #查看指定条目的记录 curl 'localhost:9200/accounts/person/1?……
+                                <p class="readmore"><a href="https://1huizui.cn/post/code/db/curl-es/">阅读全文</a></p>
+                            </div>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
                                     <a href="https://1huizui.cn/post/code/linux/linuxbashtools/">Linux 命令行工具</a>
                                 </h1>
                             </header>
@@ -283,6 +307,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://1huizui.cn/post/code/db/curl-es/" title="CURL-ES 指令收集">CURL-ES 指令收集</a>
+    </li>
+    
+    <li>
         <a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/" title="Golang 培训计划(02): 你好, 认识一下?">Golang 培训计划(02): 你好, 认识一下?</a>
     </li>
     
@@ -318,10 +346,6 @@
         <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表">Redis的数据结构与对象(4): 压缩列表</a>
     </li>
     
-    <li>
-        <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/" title="Redis的数据结构与对象(3): 跳跃表及整数集合">Redis的数据结构与对象(3): 跳跃表及整数集合</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -348,7 +372,7 @@
     </li>
     
     <li>
-        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(7)</a>
+        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(8)</a>
     </li>
     
     <li>

@@ -72,6 +72,39 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/" title="Redis的数据结构与对象(3): 跳跃表及整数集合" >Redis的数据结构与对象(3): 跳跃表及整数集合</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2018年6月9日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">Redis的设计与实现</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                <h1 id="跳跃表">跳跃表</h1>
+
+<p>Redis使用跳跃表作为有序集合键的底层实现之一,  如果一个有序集合包含的元素比较多, 或者有序集合中的元素是比较长的字符串时, Redis会使用跳跃表来作为有序集合的底层实现.</p>
+
+<p>关于跳跃表的原理, 可以参考:</p>
+
+<blockquote>
+<p><a href="http://blog.jobbole.com/111731/">漫画算法：什么是跳跃表？</a></p>
+</blockquote>
+
+<p>在大部分情况下, 跳跃表的效率可以和平衡树相媲美, 并且因为跳跃表的实现比平衡树要来得更为简单, 所以有不少程序都使用跳跃表来代替平衡树.</p>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
                                     <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/" title="Redis的数据结构与对象(2): 链表及字典" >Redis的数据结构与对象(2): 链表及字典</a>
                                 </h1>
                             </header>
@@ -325,31 +358,6 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
                             <p class="readmore"><a href="https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/">阅读全文</a></p>
                         </article>
                     
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/" title="Laravel集成腾讯云短信" >Laravel集成腾讯云短信</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年4月25日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB">码夫</a></span>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                <p>开了几次会, 产品终于定下来接入腾讯云短信平台</p>
-
-<p>本来想装装逼, 结果 composer一下子就装好了..</p>……
-                            </div>
-                            <p class="readmore"><a href="https://1huizui.cn/post/code/php/laravel%E9%9B%86%E6%88%90%E8%85%BE%E8%AE%AF%E4%BA%91%E7%9F%AD%E4%BF%A1/">阅读全文</a></p>
-                        </article>
-                    
                     
 
 
@@ -402,6 +410,10 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
 <ul class="widget-list">
     
     <li>
+        <a href="https://1huizui.cn/post/code/db/curl-es/" title="CURL-ES 指令收集">CURL-ES 指令收集</a>
+    </li>
+    
+    <li>
         <a href="https://1huizui.cn/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/" title="Golang 培训计划(02): 你好, 认识一下?">Golang 培训计划(02): 你好, 认识一下?</a>
     </li>
     
@@ -437,10 +449,6 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
         <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表">Redis的数据结构与对象(4): 压缩列表</a>
     </li>
     
-    <li>
-        <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/" title="Redis的数据结构与对象(3): 跳跃表及整数集合">Redis的数据结构与对象(3): 跳跃表及整数集合</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -467,7 +475,7 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     </li>
     
     <li>
-        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(7)</a>
+        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(8)</a>
     </li>
     
     <li>
