@@ -82,7 +82,31 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
-                                    <a href="https://1huizui.cn/post/code/db/curl-es/">CURL-ES 指令收集</a>
+                                    <a href="https://1huizui.cn/post/article/first-dolce/">家里的第一台咖啡机</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月8日
+                            </date>
+                            
+                            <div class="post-meta meta-category">
+                                |
+                                
+                                    <a href="https://1huizui.cn/categories/%E5%BA%AD%E4%B8%AD%E6%9C%89%E6%A0%91-%E7%94%9F%E4%B9%9F%E6%9C%89%E6%B6%AF">庭中有树, 生也有涯</a>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                托黑五的福, 家里新置一台咖啡机.
+PS: 结果后面发现价格又降了, 还是黑了.……
+                                <p class="readmore"><a href="https://1huizui.cn/post/article/first-dolce/">阅读全文</a></p>
+                            </div>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/db/curl-es/">[ES 资料]CURL 指令收集</a>
                                 </h1>
                             </header>
                             <date class="post-meta meta-date">
@@ -97,8 +121,9 @@
                             </div>
                             
                             <div class="post-content">
-                                收集波 curl 操作 es 的代码
-#查看es基本信息 curl localhost:9200 #列出所有的Index curl -X GET 'http://localhost:9200/_cat/indices?v' #列举每个Index下的Type curl 'localhost:9200/_mapping?pretty=true' #添加Index curl -X PUT 'localhost:9200/weather' #删除Index curl -X DELETE 'localhost:9200/weather' #安装中文分词插件ik （安装完需要重启es） elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.5.4/elasticsearch-analysis-ik-6.5.4.zip #创建一个Index，并设置其结构和分词 curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts' -d ' { &quot;mappings&quot;: { &quot;person&quot;: { &quot;properties&quot;: { &quot;user&quot;: { &quot;type&quot;: &quot;text&quot;, &quot;analyzer&quot;: &quot;ik_max_word&quot;, &quot;search_analyzer&quot;: &quot;ik_max_word&quot; }, &quot;title&quot;: { &quot;type&quot;: &quot;text&quot;, &quot;analyzer&quot;: &quot;ik_max_word&quot;, &quot;search_analyzer&quot;: &quot;ik_max_word&quot; } } } } }' #向Index增加记录 #PUT方式 curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts/person/1' -d ' { &quot;user&quot;: &quot;张三&quot;, &quot;title&quot;: &quot;工程师&quot; }' #POST方式（POST方式不需要传id，id随机生成） #curl -X POST -H 'Content-Type: application/json' 'localhost:9200/accounts/person' -d ' { &quot;user&quot;: &quot;李四&quot;, &quot;title&quot;: &quot;工程师&quot; } #注意：如果没有先创建 Index（这个例子是accounts），直接执行上面的命令，Elastic 也不会报错，而是直接生成指定的 Index。所以，打字的时候要小心，不要写错 Index 的名称。 #查看指定条目的记录 curl 'localhost:9200/accounts/person/1?……
+                                <p>收集波 curl 操作 es 的代码</p>
+
+<!---more -->……
                                 <p class="readmore"><a href="https://1huizui.cn/post/code/db/curl-es/">阅读全文</a></p>
                             </div>
                         </article>
@@ -159,7 +184,15 @@
 <ul class="widget-list">
     
     <li>
-        <a href="https://1huizui.cn/post/code/db/curl-es/" title="CURL-ES 指令收集">CURL-ES 指令收集</a>
+        <a href="https://1huizui.cn/post/code/db/es-datatype/" title="[ES 资料]字段和索引">[ES 资料]字段和索引</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/article/first-dolce/" title="家里的第一台咖啡机">家里的第一台咖啡机</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/code/db/curl-es/" title="[ES 资料]CURL 指令收集">[ES 资料]CURL 指令收集</a>
     </li>
     
     <li>
@@ -190,14 +223,6 @@
         <a href="https://1huizui.cn/post/article/back_to_work_2019/" title="夜深人静, 听&lt;不一定&gt;">夜深人静, 听&lt;不一定&gt;</a>
     </li>
     
-    <li>
-        <a href="https://1huizui.cn/post/golang/fuckgfw/" title="go get 翻墙">go get 翻墙</a>
-    </li>
-    
-    <li>
-        <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表">Redis的数据结构与对象(4): 压缩列表</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -224,7 +249,11 @@
     </li>
     
     <li>
-        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(8)</a>
+        <a href="https://1huizui.cn/categories/%E5%BA%AD%E4%B8%AD%E6%9C%89%E6%A0%91-%E7%94%9F%E4%B9%9F%E6%9C%89%E6%B6%AF/">庭中有树-生也有涯(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(9)</a>
     </li>
     
     <li>
@@ -237,6 +266,8 @@
     <section class="widget">
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
+    
+    <a href="https://1huizui.cn/tags/base/">base</a>
     
     <a href="https://1huizui.cn/tags/bbr/">bbr</a>
     

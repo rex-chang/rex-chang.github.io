@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>base on 一回醉居</title>
+    <link>https://1huizui.cn/tags/base/</link>
+    <description>Recent content in base on 一回醉居</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Dec 2019 01:08:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://1huizui.cn/tags/base/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[ES 资料]字段和索引</title>
+      <link>https://1huizui.cn/post/code/db/es-datatype/</link>
+      <pubDate>Thu, 19 Dec 2019 01:08:10 +0900</pubDate>
+      
+      <guid>https://1huizui.cn/post/code/db/es-datatype/</guid>
+      <description>&lt;h1 id=&#34;es-的字段类型&#34;&gt;&lt;code&gt;ES&lt;/code&gt; 的字段类型&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;字符串类型&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;string&lt;/code&gt;: 已废弃 (自&lt;code&gt;ES&lt;/code&gt;5.x 起)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;text&lt;/code&gt;: 全文搜索类型, 不用于排序, 很少用于聚合&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;keyword&lt;/code&gt;: 索引结构化的字段, 只能通过&lt;strong&gt;精确值&lt;/strong&gt;搜索到&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;整数类型&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;byte&lt;/code&gt;: -128~127&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;short&lt;/code&gt;: -32768~32767&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;integer&lt;/code&gt;: -2^31~2^31-1&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;long&lt;/code&gt;: -2^63~2^63-1&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

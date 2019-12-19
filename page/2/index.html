@@ -72,6 +72,51 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/golang/fuckgfw/" title="go get 翻墙" >go get 翻墙</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2018年12月20日
+                            </date>
+                            
+                            <div class="post-content">
+                                <p>go get 时, 会发送一个 https 请求, 此时 设置的 git 的 socks5 代理无效</p>
+
+<p>解决方案:</p>
+
+<pre><code class="language-bash">https_proxy=127.0.0.1:7777 go get -u -v xxxx
+</code></pre>……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/golang/fuckgfw/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表" >Redis的数据结构与对象(4): 压缩列表</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2018年6月11日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>|</span>
+                                
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/redis%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">Redis的设计与实现</a></span>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                压缩列表(ziplist) 压缩列表（ziplist）是列表(list)键和哈希(hash table)键的底层实现之一. 当一个列表键只包含少量列表项, 并且每个列表项要么就是小整数值, 要么就是长度比较短的字符串, 那么Redis就会使用压缩列表来做列表键的底层实现.
+未完待续..……
+                            </div>
+                            <p class="readmore"><a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">阅读全文</a></p>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
                                     <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/" title="Redis的数据结构与对象(3): 跳跃表及整数集合" >Redis的数据结构与对象(3): 跳跃表及整数集合</a>
                                 </h1>
                             </header>
@@ -312,52 +357,6 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
                             <p class="readmore"><a href="https://1huizui.cn/post/net/osi%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E4%B8%8Etcpip%E5%9B%9B%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/">阅读全文</a></p>
                         </article>
                     
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/" title="Laravel解析env配置" >Laravel解析env配置</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年4月27日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB">码夫</a></span>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                <p>业务需求需要写一些脚本来导入数据, 但是在<code>wsl</code>下面, <code>php artisan make:command xxx</code> 实在是卡, 于是选择了直接写. 需要解析 <code>.env</code> 来读取配置, 于是简单了解了下 Laravel 解析配置的方法</p>……
-                            </div>
-                            <p class="readmore"><a href="https://1huizui.cn/post/code/php/laravel%E8%A7%A3%E6%9E%90env%E9%85%8D%E7%BD%AE/">阅读全文</a></p>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/" title="屏蔽安卓退出全屏的提示" >屏蔽安卓退出全屏的提示</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年4月25日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB">码夫</a></span>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                <p>屏蔽安卓退出全屏的提示, 适用于盒子</p>……
-                            </div>
-                            <p class="readmore"><a href="https://1huizui.cn/post/code/android/%E5%B1%8F%E8%94%BD%E5%AE%89%E5%8D%93%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F%E7%9A%84%E6%8F%90%E7%A4%BA/">阅读全文</a></p>
-                        </article>
-                    
                     
 
 
@@ -410,7 +409,15 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
 <ul class="widget-list">
     
     <li>
-        <a href="https://1huizui.cn/post/code/db/curl-es/" title="CURL-ES 指令收集">CURL-ES 指令收集</a>
+        <a href="https://1huizui.cn/post/code/db/es-datatype/" title="[ES 资料]字段和索引">[ES 资料]字段和索引</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/article/first-dolce/" title="家里的第一台咖啡机">家里的第一台咖啡机</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/post/code/db/curl-es/" title="[ES 资料]CURL 指令收集">[ES 资料]CURL 指令收集</a>
     </li>
     
     <li>
@@ -441,14 +448,6 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
         <a href="https://1huizui.cn/post/article/back_to_work_2019/" title="夜深人静, 听&lt;不一定&gt;">夜深人静, 听&lt;不一定&gt;</a>
     </li>
     
-    <li>
-        <a href="https://1huizui.cn/post/golang/fuckgfw/" title="go get 翻墙">go get 翻墙</a>
-    </li>
-    
-    <li>
-        <a href="https://1huizui.cn/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/" title="Redis的数据结构与对象(4): 压缩列表">Redis的数据结构与对象(4): 压缩列表</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -475,7 +474,11 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     </li>
     
     <li>
-        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(8)</a>
+        <a href="https://1huizui.cn/categories/%E5%BA%AD%E4%B8%AD%E6%9C%89%E6%A0%91-%E7%94%9F%E4%B9%9F%E6%9C%89%E6%B6%AF/">庭中有树-生也有涯(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(9)</a>
     </li>
     
     <li>
@@ -488,6 +491,8 @@ C字符串只会作为字符串字面量用在一些无需对字符串进行修�
     <section class="widget">
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
+    
+    <a href="https://1huizui.cn/tags/base/">base</a>
     
     <a href="https://1huizui.cn/tags/bbr/">bbr</a>
     
