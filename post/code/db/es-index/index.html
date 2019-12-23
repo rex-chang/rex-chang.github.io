@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>go get 翻墙 | 一回醉居</title>
-    <meta property="og:title" content="go get 翻墙 - 一回醉居">
+    <title>[ES]索引的一点笔记 | 一回醉居</title>
+    <meta property="og:title" content="[ES]索引的一点笔记 - 一回醉居">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2018-12-20T14:41:28&#43;08:00">
+    <meta property="article:published_time" content="2019-12-23T01:08:15&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2018-12-20T14:41:28&#43;08:00">
+    <meta property="article:modified_time" content="2019-12-23T01:08:15&#43;08:00">
         
     <meta name="Keywords" content="打杂的人,php,golang,nodejs">
-    <meta name="description" content="go get 翻墙">
+    <meta name="description" content="[ES]索引的一点笔记">
         
     <meta name="author" content="骑马爬树">
-    <meta property="og:url" content="https://1huizui.cn/post/golang/fuckgfw/">
+    <meta property="og:url" content="https://1huizui.cn/post/code/db/es-index/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
@@ -70,6 +70,111 @@
 
 <div id="body">
         
+        <div id="virtual_toc_list" style="display: none">
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#快速检索">快速检索</a></li>
+</ul>
+</nav>
+        </div>
+        <div id="float_toc_div" style="margin: 10px;border: 1px solid gray;z-index:99999;display: none;">
+            <header style="background-color: #f3f3f3;color: black;border-bottom: 1px solid gray;padding: 10px 10px 10px 10px;">
+                <strong id="toc_btn_open" style="color: black;font-size: large;">目录</strong>
+                <strong id="toc_btn_close" style="color: black;font-size: large;float: right">╳</strong>
+            </header>
+            <div id="toc_list" style="background-color: #f3f3f3;color: black;padding: 10px;">
+        
+            </div>
+        </div>
+        <style type="text/css">
+            #float_toc_div {
+                position: fixed;
+                display: none;
+                 
+                height: auto;
+                font-size: 13px;
+            }
+        
+            #toc_list a:hover,
+            #toc_list a:active {
+                color: #ba3925;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                let tocNavElem = document.getElementById("TableOfContents");
+                let floatTocDivElem = document.getElementById("float_toc_div");
+                let tocListElem = floatTocDivElem.getElementsByTagName('div')[0];
+                let colGroupElem = document.getElementById("body").getElementsByClassName("col-group")[0]
+                let floatTocWidth = (document.body.clientWidth - colGroupElem.offsetWidth) / 2 - 16;
+                var useFloatToc = false;
+
+                if (floatTocWidth >= 100) {
+                    useFloatToc = true;
+                    document.getElementById("toc_list").appendChild(tocNavElem);
+                    floatTocDivElem.style.display = 'block';
+                    floatTocDivElem.style.width = floatTocWidth + 'px';
+                    top();
+                    floatTocDivElem.style.left = '0px';
+
+                    function top() {
+                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
+                            floatTocDivElem.style.top = '0px';
+                        } else {
+                            floatTocDivElem.style.top = window.innerHeight / 9 + 'px';
+                        }
+                    }
+
+                    function ishide() {
+                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
+                            floatTocDivElem.style.top = '0px';
+                        } else {
+                            floatTocDivElem.style.display = 'block';
+                        }
+                    }
+
+                    window.onscroll = function () {
+                        ishide();
+                        if ((document.documentElement.scrollTop != 0) && (floatTocDivElem.style.display == 'block')) {
+                            top();
+                        }
+                    };
+
+                    window.onresize = function () {
+                        ishide();
+                    }
+
+                    document.getElementById("toc_btn_open").addEventListener('click', function () {
+                        switch (tocListElem.style.display) {
+                            case "none":
+                                document.getElementById("toc_btn_close").style.display = "";
+                                tocListElem.style.display = "";
+                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "1px solid gray";
+                                break;
+                            default:
+                                break;
+                        }
+                    }, false);
+
+                    document.getElementById("toc_btn_close").addEventListener('click', function () {
+                        switch (tocListElem.style.display) {
+                            case "":
+                                document.getElementById("toc_btn_close").style.display = "none";
+                                tocListElem.style.display = "none";
+                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "";
+                                break;
+                            default:
+                                break;
+                        }
+                    }, false);
+                } else {
+                    let fixedTocElem = document.getElementsByClassName("toc-article")[0];
+                    fixedTocElem.appendChild(tocNavElem);
+                    fixedTocElem.parentElement.style.display = "";
+                }
+                document.getElementById("virtual_toc_list").remove();
+            };   
+        </script>
         
     <div class="container">
         <div class="col-group">
@@ -78,34 +183,39 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title">go get 翻墙</h1>
+                            <h1 class="post-title">[ES]索引的一点笔记</h1>
                         </header>
                         <date class="post-meta meta-date">
-                            2018年12月20日
+                            2019年12月23日
                         </date>
                         
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB">码夫</a></span>
+                            
+                        </div>
                         
+                        
+                        
+                        <div class="clear" style="display: none">
+                            <div class="toc-article">
+                                <div class="toc-title">文章目录</div>
+                            </div>
+                        </div>
                         
                         <div class="post-content">
-                            <p>go get 时, 会发送一个 https 请求, 此时 设置的 git 的 socks5 代理无效</p>
+                            <p>最近研究了下 ES 的索引实现, 整理下思路.</p>
 
-<p>解决方案:</p>
+<p><a href="https://www.infoq.cn/article/database-timestamp-02/?utm_source=infoq&amp;utm_medium=related_content_link&amp;utm_campaign=relatedContent_articles_clk">参考文档</a></p>
 
-<pre><code class="language-bash">https_proxy=127.0.0.1:7777 go get -u -v xxxx
-</code></pre>
+<h1 id="快速检索">快速检索</h1>
 
-<p>安装 Gin 的时候, 报错:
-&gt; package golang.org/x/net/context: unrecognized import path &ldquo;golang.org/x/net/context&rdquo; (https fetch: Get <a href="https://golang.org/x/net/context?go-get=1:">https://golang.org/x/net/context?go-get=1:</a> dial tcp 216.239.37.1:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)</p>
+<p><code>b-tree</code> 索引是为写入优化的索引结构。当我们不需要支持快速的更新的时候，可以用预先排序等方式换取更小的存储空间，更快的检索速度等好处，其代价就是更新慢。要进一步深入的化，还是要看一下 Lucene 的倒排索引是怎么构成的。</p>
 
-<p>解决办法如下：</p>
+<p><code>mysql</code> 的索引是一棵 <code>B+ Tree</code>, 可以使用二分查找的方式, 比全遍历更快的找出目标数据, 这个就是 <code>term dictionary</code>,  有了 <code>term  dictionary</code> 之后, 可以用 $\log_2N$ 次磁盘查找找到目标(一次 rondom access 大概需要 10ms 的时间), 所以尽量的少读磁盘, 有必要把一些数据缓存在内存里, 但是整个 <code>term dictionary</code> 本身太大了, 于是就有了 <code>term index</code>, <code>term index</code> 有点像字典. <code>term index</code> 本身的实现为一个 trie 树, 本身是 term 的一些前缀.</p>
 
-<pre><code class="language-bash">mkdir -p $GOPATH/src/golang.org/x/
-cd $GOPATH/src/golang.org/x/
-git clone https://github.com/golang/net.git net 
-go install net
-</code></pre>
-
-<p>安装了这个 <code>net</code> 包，然后再去安装 <code>Gin</code> ，就安装成功了。</p>
+<p>&hellip;.</p>
                         </div>
 
                         
@@ -117,15 +227,15 @@ go install net
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B04/">Redis的数据结构与对象(4): 压缩列表</a></li>
+        <li><a href="/post/article/first-dolce/">家里的第一台咖啡机</a></li>
         
-        <li><a href="/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B03/">Redis的数据结构与对象(3): 跳跃表及整数集合</a></li>
+        <li><a href="/post/code/db/curl-es/">[ES 资料]CURL 指令收集</a></li>
         
-        <li><a href="/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B02/">Redis的数据结构与对象(2): 链表及字典</a></li>
+        <li><a href="/post/code/linux/linuxbashtools/">Linux 命令行工具</a></li>
         
-        <li><a href="/post/code/redis/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B01/">Redis的数据结构与对象(1): 字符串</a></li>
+        <li><a href="/post/code/db/es-datatype/">[ES 资料]字段和索引</a></li>
         
-        <li><a href="/post/code/python/pip%E8%B7%B3%E8%BF%87%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85/">Pip跳过已安装的包</a></li>
+        <li><a href="/post/golang/learning-golang/01.%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B/">Golang 培训计划(02): 你好, 认识一下?</a></li>
         
     </ul>
 </div>
@@ -135,11 +245,7 @@ go install net
                             
                             <ul class="clearfix">
                                 
-                                <li><a href="https://1huizui.cn/tags/golang">golang</a></li>
-                                
-                                <li><a href="https://1huizui.cn/tags/go">go</a></li>
-                                
-                                <li><a href="https://1huizui.cn/tags/gin">gin</a></li>
+                                <li><a href="https://1huizui.cn/tags/ops">ops</a></li>
                                 
                             </ul>
                             

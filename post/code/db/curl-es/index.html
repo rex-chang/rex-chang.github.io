@@ -203,9 +203,108 @@
                         <div class="post-content">
                             <p>收集波 curl 操作 es 的代码</p>
 
-<!---more -->
+<pre><code class="language-bash">
+#查看es基本信息
+curl localhost:9200
 
-e>
+#列出所有的Index
+curl -X GET 'http://localhost:9200/_cat/indices?v'
+
+#列举每个Index下的Type
+curl 'localhost:9200/_mapping?pretty=true'
+
+#添加Index
+curl -X PUT 'localhost:9200/weather'
+
+#删除Index
+curl -X DELETE 'localhost:9200/weather'
+
+#安装中文分词插件ik （安装完需要重启es）
+elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.5.4/elasticsearch-analysis-ik-6.5.4.zip
+
+&lt;!--more--&gt;
+
+#创建一个Index，并设置其结构和分词
+curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts' -d '
+{
+  &quot;mappings&quot;: {
+    &quot;person&quot;: {
+      &quot;properties&quot;: {
+        &quot;user&quot;: {
+          &quot;type&quot;: &quot;text&quot;,
+          &quot;analyzer&quot;: &quot;ik_max_word&quot;,
+          &quot;search_analyzer&quot;: &quot;ik_max_word&quot;
+        },
+        &quot;title&quot;: {
+          &quot;type&quot;: &quot;text&quot;,
+          &quot;analyzer&quot;: &quot;ik_max_word&quot;,
+          &quot;search_analyzer&quot;: &quot;ik_max_word&quot;
+        }
+      }
+    }
+  }
+}'
+
+#向Index增加记录
+#PUT方式
+curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts/person/1' -d '
+{
+  &quot;user&quot;: &quot;张三&quot;,
+  &quot;title&quot;: &quot;工程师&quot;
+}' 
+
+#POST方式（POST方式不需要传id，id随机生成）
+#curl -X POST -H 'Content-Type: application/json' 'localhost:9200/accounts/person' -d '
+{
+  &quot;user&quot;: &quot;李四&quot;,
+  &quot;title&quot;: &quot;工程师&quot;
+}
+
+#注意：如果没有先创建 Index（这个例子是accounts），直接执行上面的命令，Elastic 也不会报错，而是直接生成指定的 Index。所以，打字的时候要小心，不要写错 Index 的名称。
+
+#查看指定条目的记录
+curl 'localhost:9200/accounts/person/1?pretty=true'
+
+#删除一条记录
+curl -X DELETE 'localhost:9200/accounts/person/1'
+
+#更新一条记录
+curl -X PUT -H 'Content-Type: application/json' 'localhost:9200/accounts/person/1' -d '
+{
+    &quot;user&quot; : &quot;张三&quot;,
+    &quot;title&quot; : &quot;软件开发&quot;
+}' 
+
+#查询所有记录
+curl 'localhost:9200/accounts/person/_search?pretty=true'
+
+#简单查询
+curl -H 'Content-Type: application/json' 'localhost:9200/accounts/person/_search?pretty=true'  -d '
+{
+  &quot;query&quot; : { &quot;match&quot; : { &quot;title&quot; : &quot;工程&quot; }},
+  &quot;from&quot;: 1, #0开始
+  &quot;size&quot;: 1, #返回几条数据
+}'
+
+#OR查询
+curl -H 'Content-Type: application/json' 'localhost:9200/accounts/person/_search?pretty=true'  -d '
+{
+  &quot;query&quot; : { &quot;match&quot; : { &quot;title&quot; : &quot;工程 哈哈&quot; }}
+}'
+
+#AND查询
+curl -H 'Content-Type: application/json' 'localhost:9200/accounts/person/_search?pretty=true'  -d '
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+        { &quot;match&quot;: { &quot;title&quot;: &quot;工程&quot; } },
+        { &quot;match&quot;: { &quot;title&quot;: &quot;哈哈&quot; } }
+      ]
+    }
+  }
+}'
+</code></pre>
                         </div>
 
                         
@@ -263,6 +362,10 @@ e>
 <ul class="widget-list">
     
     <li>
+        <a href="https://1huizui.cn/post/code/db/es-index/" title="[ES]索引的一点笔记">[ES]索引的一点笔记</a>
+    </li>
+    
+    <li>
         <a href="https://1huizui.cn/post/code/db/es-datatype/" title="[ES 资料]字段和索引">[ES 资料]字段和索引</a>
     </li>
     
@@ -298,10 +401,6 @@ e>
         <a href="https://1huizui.cn/post/golang/gopls/" title="使用 Gopls 代码提示">使用 Gopls 代码提示</a>
     </li>
     
-    <li>
-        <a href="https://1huizui.cn/post/article/back_to_work_2019/" title="夜深人静, 听&lt;不一定&gt;">夜深人静, 听&lt;不一定&gt;</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -332,7 +431,7 @@ e>
     </li>
     
     <li>
-        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(9)</a>
+        <a href="https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/">码夫(10)</a>
     </li>
     
     <li>

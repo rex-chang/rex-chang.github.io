@@ -4,19 +4,42 @@
   
   <url>
     <loc>https://1huizui.cn/categories/</loc>
-    <lastmod>2019-12-19T01:08:10+09:00</lastmod>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://1huizui.cn/post/</loc>
-    <lastmod>2019-12-19T01:08:10+09:00</lastmod>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://1huizui.cn/tags/</loc>
-    <lastmod>2019-12-19T01:08:10+09:00</lastmod>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/post/code/db/es-index/</loc>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/tags/ops/</loc>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/</loc>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</loc>
+    <lastmod>2019-12-23T01:08:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -28,24 +51,6 @@
   <url>
     <loc>https://1huizui.cn/tags/base/</loc>
     <lastmod>2019-12-19T01:08:10+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://1huizui.cn/</loc>
-    <lastmod>2019-12-19T01:08:10+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://1huizui.cn/categories/%E7%A0%81%E5%A4%AB/</loc>
-    <lastmod>2019-12-19T01:08:10+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://1huizui.cn/tags/ops/</loc>
-    <lastmod>2019-12-08T01:08:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
